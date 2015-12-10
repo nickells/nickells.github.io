@@ -79,7 +79,7 @@ h3{
 
 .navThing div{
   display: inline-block;
-  width: calc((100% -15px) / 3);
+  width: 31.33%;
   text-align: center;
   color: white;
   background: #666;
