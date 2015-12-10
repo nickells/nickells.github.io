@@ -11,6 +11,10 @@ body{
 a:hover{
   text-decoration: none
 }
+a:focus{
+  text-decoration: none
+}
+
 .nick{
   border-radius: 100%;
   width: 130px;
