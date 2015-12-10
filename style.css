@@ -3,10 +3,12 @@ body{
   background: #EEE;
   font-size: 12pt;
   font-family: 'Roboto Slab', serif;
+  /*font-weight: 400;*/
 }
 *{
   color: #333;
   /*border: 1px solid black;*/
+  /*box-sizing: border-box;*/
 }
 a:hover{
   text-decoration: none
@@ -15,11 +17,22 @@ a:focus{
   text-decoration: none
 }
 
+h3{
+  /*font-size: 24pt;*/
+  font-weight: bold;
+  /*font-style: italic;*/
+}
+.project-text h3{
+  font-size: 20pt;
+  font-weight: 500;
+}
+
+
 .nick{
   border-radius: 100%;
   width: 130px;
   height: 130px;
-  border: 6px solid turquoise;
+  border: 6px solid #258;
   display: inline-block;
 }
 .nick img{
@@ -43,8 +56,8 @@ a:focus{
   font-family: "Oleo Script";
   display: inline;
   font-size: 40pt;
-  color: #444;
-  text-shadow: 2px 2px 0px turquoise;
+  color: #258;
+  text-shadow: 2px 2px 0px #9ac;
 }
 
 
@@ -66,9 +79,17 @@ a:focus{
 .single-project{
   background: white;
   color: grey;
-  padding: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #CCC;
+  /*padding: 10px;*/
   margin-bottom: 20px;
   box-shadow: 0px 5px 5px rgba(0,0,0,.3);
+}
+
+.project-text{
+  padding: 10px;
+  /*padding-left: 0px;*/
 }
 
 .top{
@@ -82,11 +103,13 @@ h3{
 }
 
 .navThing div{
+  background: -webkit-linear-gradient(#258,#148);
   display: inline-block;
   width: 31.33%;
   text-align: center;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+
   color: white;
-  background: #666;
   padding: 5px;
   margin: 0px;
   transition: .2s;
@@ -95,11 +118,17 @@ h3{
   margin-bottom: 5px;
 }
 .navThing div:hover{
-  background: #888;
+  background: -webkit-linear-gradient(#369,#258);
   transform: translateY(-4px);
 
 }
 
+
+@media screen and (min-width: 992px) {
+  .project-body-container{
+    padding-left: 0px;
+  }
+}
 
 @media screen and (min-width: 768px) {
 
@@ -135,7 +164,8 @@ h3{
 }
 .project-link{
   /*text-transform: uppercase;*/
-  background: #666;
+  background: -webkit-linear-gradient(#258,#148);
+  text-shadow: 2px 2px 2px rgba(0,0,0,.2);
   color: white;
   border-radius: 2px;
   border: 0px solid transparent;
@@ -143,9 +173,12 @@ h3{
   position: relative;
   bottom: 0px;
   transition: .2s;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.2);
 }
 .project-link:hover{
-  background: #888;
+  background: -webkit-linear-gradient(#369,#258);
+  box-shadow: 4px 2px 2px rgba(0,0,0,.2);
+
   transform: translateY(-3px);
 }
 
@@ -156,16 +189,22 @@ h3{
   background: url('breezeblocks.png');
 }
 .contact-icon{
+  /*box-shadow: 2px 2px 2px rgba(0,0,0,.2);*/
+
   text-align: center;
   font-size: 16pt;
   font-weight: bold;
   /*background: white;*/
 }
+.contact-icon p{
+    color: #148;
+}
 .contact-icon i{
+  text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+  color: #258;
   transition: .2s;
 }
 .contact-icon i:hover{
-  color: #888;
   transform: translateY(-3px);
   text-decoration: none;
   cursor: pointer;
@@ -178,7 +217,7 @@ h3{
 .footer{
   position: relative;
   color: white;
-  font-size: 10pt;
+  font-size: 9pt;
   bottom: 0px;
   height: 40px;
   width: 100%;
