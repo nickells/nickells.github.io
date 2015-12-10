@@ -1,6 +1,8 @@
 body{
   margin: 0px;
   background: #EEEFEF;
+  font-size: 12pt;
+  font-family: sans-serif;
 }
 *{
   /*border: 1px solid black;*/
@@ -24,6 +26,10 @@ body{
   padding-left: 0px;
   padding-right: 0px;
 }
+.main-content{
+  /*margin: 10px;*/
+  /*background: white;*/
+}
 
 .main-content p{
   border-left: 1px solid #CCC;
@@ -31,11 +37,13 @@ body{
 }
 
 .single-project{
-  /*height: 100px;*/
   background: white;
+  height: 100%;
   margin: 5px;
+  min-height: 350px;
   margin-bottom: 10px;
   box-shadow: 0px 5px 5px rgba(0,0,0,.1);
+  overflow: hidden;
 }
 
 .top{
@@ -46,17 +54,23 @@ body{
 h3{
   margin-top: 5px;
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .main-body{
     margin: 0px 40px;
   }
-  .col-md-2 h3{
+  .content-label h3{
     text-align: right;   
+  }
+  .content-label{
+    width: 15%;
   }
   .main-content{
     /*margin-left: 0px;*/
     /*padding-left: 10px;*/
     margin-bottom: 10px;
+  }
+  .thumbFooter{
+    bottom: 10px;
   }
 }
 
@@ -65,15 +79,29 @@ h3{
   clip: auto;
   height: 200px;
   color: white;
+  transition: .1s;
 }
+.thumb:hover{
+  -webkit-filter: brightness(0.8);
+
+}
+
 .thumbText{
   padding: 5px;
+}
+.thumbFooter{
+  padding: 5px;
+  background: #DDD;
+  width: inherit;
+  position: absolute;
+  bottom: 0px;
+  width: calc(100% - 10px);
+  display: block;
 }
 .img1{
   background: url('http://www.fillmurray.com/300/200');
   background-size: cover;
 }
-
 .footer{
   position: relative;
   color: white;
