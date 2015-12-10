@@ -190,7 +190,7 @@ h3{
 .thumb{
   width: 100%;
   opacity: .8;
-  transition: .2s;
+  /*transition: .2s;*/
 }
 .thumb:hover{
   opacity: 1.0;
