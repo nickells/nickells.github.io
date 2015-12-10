@@ -4,6 +4,8 @@
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300,100,700,400' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -11,79 +13,163 @@
 <body>
 <!-- <div class="container">
 <div class="row top">
-  <div class="nick">
-    <img src="nick2.png" \>
-  </div>
+ 
   Hello!
 </div>
 </div> -->
+  <div class="page-header">
+  <div class="main-body">
+  <div class="row">
+    <div class="col-sm-9">
+    <div class="nick">
+      <img src="nick2.png" \>
+    </div>
+    <div class="greeting">Welcome!</div>
+    </div>
+    <div class="col-sm-3 navThing">
+
+    <a href="#about"><div>About</div></a>
+    <a href="#projects"><div>Projects</div></a>
+    <a href="#contact"><div>Contact</div></a>
+
+    </div>
+  </div>
+  </div>
+  </div>
 <div class="container-fluid">
-<div class="page-header">
-<h1>Hello! <small>Secondary text</small></h1>
-</div>
-<div class="main-body">
-<div class="row">
-  <div class="col-md-2 col-sm-2 content-label">
-    <h3>About</h3>
-  </div>
-  <div class="col-md-10 col-sm-10 main-content">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-2 col-sm-2 content-label">
-    <h3>Projects</h3>
-  </div>
-  <div class="col-md-10 col-sm-10 main-content">
-    <p>Lorem Ipsum is simply dummy text of the printtting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-    <div class="col-md-6 col-sm-6 card-holder">
-      <div class="single-project">
-        <div class="thumb img1">Bill</div>
-        <div class="thumbText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-        <div class="thumbFooter">Link | Link</div>
+  <div class="main-body">
+
+    <div class="row">
+      <div class="col-md-2 col-sm-2 content-label">
+        <h3 id="about">About</h3>
+      </div>
+      <div class="col-md-10 col-sm-10 main-content">
+        <div class="content-holder">
+          <p>Hello! I am Nick Ellsworth, and you seem to have found my online portfolio. Welcome. Take a look around. Stop and smell the DOM tree. Pleasant, right?</p>
+          <p>After completing my music major in Clarinet Performance, I enrolled in Fullstack Academy to continue nurturing my need to build and create. I spent three months in their intensive course, learning the ins and outs of MEAN stack Javascript. It was quite the whirlwind. Afterwards, I joined the Fullstack team for a "Fellowship" position, which is essentially part teaching-instructor and part software engineer. After another 13 weeks, I've gained valuable experience mentoring others and working on a SCRUM team. Currently on the job hunt.</p>
+        </div>
       </div>
     </div>
-    <div class="col-md-6 col-sm-6 card-holder">
-      <div class="single-project">
-        <div class="thumb img1">Bill</div>
-        <div class="thumbText">Lorem Ipsum is simply dummycrambled it to make a type scrambled it to make a type s text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+    <div class="row">
+      <div class="col-md-2 col-sm-2 content-label">
+        <h3 id="projects">Projects</h3>
+      </div>
+      <div class="col-md-10 col-sm-10 main-content">
+        <div class="content-holder">
+          <p>I have built several projects since the beginning of my programming career. They range from silly to serious, and annoying to useful. Several of these were created during my time at Fullstack.</p>
 
-        <div class="thumbFooter">Link | Link</div>
+          <div class="single-project">
+            <div class="row">
+              <div class="col-md-3"><img src="breezeblocks.png" class="thumb"/></div>
+              <div class="col-md-9">
+                <h3>Breezeblocks</h3>
+                <p>Built with Angular, this app gives users an intuitive drag-and-drop UI for prototyping React Native apps. Layout is converted into a JSON object and sent to the backend, where it is converted into JSX. This code is then uploaded to its own Github repo, ready to download and compile with Xcode! This team project was built in fulfillment of the Fullstack Academy curriculum.</p>
+                <a href="http://www.breezeblocks.io/"><button class="project-link">See it in action</button></a>
+                <a href="https://github.com/nickells/Breezeblocks"><button class="project-link">Github Repo</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="single-project">
+            <div class="row">
+              <div class="col-md-3"><img src="dictatone.png" class="thumb"/></div>
+              <div class="col-md-9">
+                <h3>Dictatone</h3>
+                <p>Allows a user to sing, hum, or whistle into their microphone and see, magically, their melodies transcribed into printable sheet music. Won a "Mad Scientist" hackathon award at Fullstack. Also built in fulfillment of the Fullstack Academy curriculum.</p>
+                <a href="http://dictatone.herokuapp.com/"><button class="project-link">See it in action</button></a>
+                <a href="https://github.com/nickells/Dictatone"><button class="project-link">Github Repo</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="single-project">
+            <div class="row">
+              <div class="col-md-3"><img src="mementodash.png" class="thumb img1"/></div>
+              <div class="col-md-9">
+                <h3>MementoDash</h3>
+                <p>Based off Momentum Dash, this is a "User Dashboard" which takes images from the "SFWPorn" series on Reddit. Categories are chosen on the right side of the screen and images are accessed through the Imgur API. Built in Angular.</p>
+                <a href="http://www.mementodash.space/"><button class="project-link">See it in action</button></a>
+                <a href="https://github.com/nickells/mementodash.space"><button class="project-link">Github Repo</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="single-project">
+            <div class="row">
+              <div class="col-md-3"><img src="blipcrowd.png" class="thumb"/></div>
+              <div class="col-md-9">
+                <h3>BlipCrowd</h3>
+                <p>Creating a music sequencer was always something I'd had in mind since my very first-for loop. This one is unique because it uses websockets, meaning that anyone anywhere can collaborate on the same sequencer board simultaneously. (Also it's chromatic, while most are pentatonic. Personal preference.)</p>
+                <a href="http://blipcrowd.herokuapp.com/"><button class="project-link">See it in action</button></a>
+                <a href="https://github.com/nickells/blipcrowd"><button class="project-link">Github Repo</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="single-project">
+            <div class="row">
+              <div class="col-md-3"><img src="keyboardsim.png" class="thumb"/></div>
+              <div class="col-md-9">
+                <h3>Keyboard Simulator 2015</h3>
+                <p>A silly little app, it plays clicky sounds with every keydown and keyup event, and shows a neat keyboard animation that maps to each key you press. Oddly satisfying to watch and listen to. Guaranteed at least 5 mintues of satisfaction.</p>
+                <a href="http://nickells.github.io/keyboard-simulator-2015/"><button class="project-link">See it in action</button></a>
+                <a href="https://github.com/nickells/keyboard-simulator-2015"><button class="project-link">Github Repo</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="single-project">
+            <div class="row">
+              <div class="col-md-3"><img src="slack.png" class="thumb"/></div>
+              <div class="col-md-9">
+                <h3>Emoji Converter for Slack</h3>
+                <p>After a breakthrough one productive afternoon at work, I realized I could make ASCII art with Slack emojis. Subsequently, I automated this process.</p>
+                <a href="http://nickells.github.io/slack-emoji-converter/"><button class="project-link">See it in action</button></a>
+                <a href="https://github.com/nickells/slack-emoji-converter"><button class="project-link">Github Repo</button></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-    <div class="col-md-6 col-sm-6 card-holder">
-      <div class="single-project">
-        <div class="thumb img1">Bill</div>
-        <div class="thumbText">Lorum is simply dummy text of thcrambled it to make a type se printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-
-        <div class="thumbFooter">Link | Link</div>
+    <div class="row">
+      <div class="col-md-2 col-sm-2 content-label">
+        <h3 id="contact">Contact</h3>
+      </div>
+      <div class="col-md-10 col-sm-10 main-content">
+        <div class="content-holder">
+          <p>I'm on the internet!</p>
+          <div class="row">
+            <div class="col-md-3 col-xs-6 contact-icon">
+              <a href="github.com/nickells">
+                <i class="fa fa-github fa-5x"></i>
+                <p>Github</p>
+              </div>
+            </a>
+            <div class="col-md-3 col-xs-6 contact-icon">
+              <a href="mailto:ellsworth.nick@gmail.com">
+                <i class="fa fa-envelope fa-5x"></i>
+                <p>Email</p>
+              </div>
+            </a>
+            <div class="col-md-3 col-xs-6 contact-icon">
+              <a href="">
+                <i class="fa fa-linkedin fa-5x"></i>
+                <p>LinkedIn</p>
+              </div>
+            </a>
+            <div class="col-md-3 col-xs-6 contact-icon">
+              <a href="Resume.pdf">
+                <i class="fa fa-file-pdf-o fa-5x"></i>
+                <p>Resume</p>
+            </a>
+              </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-md-6 col-sm-6 card-holder">
-      <div class="single-project">
-        <div class="thumb img1">Bill</div>
-        <div class="thumbText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-
-        <div class="thumbFooter">Link | Link</div>
-      </div>
-    </div>
-
   </div>
-</div>
-<div class="row">
-  <div class="col-md-2 col-sm-2 content-label">
-    <h3>Contact</h3>
-  </div>
-  <div class="col-md-10 col-sm-10 main-content">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  </div>
-</div>
-</div>
 </div>
 <footer class="footer">
-<div class="main-body">
-
-</div>
+  <div class="main-body">
+  This website will remain grey until I find a better color scheme.
+  </div>
 </footer>
 
 </body>
