@@ -12,3 +12,5 @@ $(function() {
     }
   });
 });
+
+//thanks, css-tricks
