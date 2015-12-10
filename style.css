@@ -1,10 +1,11 @@
 body{
   margin: 0px;
-  background: #EEEFEF;
+  background: #EEE;
   font-size: 12pt;
   font-family: 'Roboto Slab', serif;
 }
 *{
+  color: #333;
   /*border: 1px solid black;*/
 }
 a:hover{
@@ -14,7 +15,7 @@ a:hover{
   border-radius: 100%;
   width: 130px;
   height: 130px;
-  border: 6px solid cyan;
+  border: 6px solid turquoise;
   display: inline-block;
 }
 .nick img{
@@ -39,6 +40,7 @@ a:hover{
   display: inline;
   font-size: 40pt;
   color: #444;
+  text-shadow: 2px 2px 0px turquoise;
 }
 
 
@@ -155,14 +157,18 @@ h3{
   font-weight: bold;
   /*background: white;*/
 }
-.contact-icon a{
-  color: #666;
+.contact-icon i{
+  transition: .2s;
 }
-.contact-icon a:hover{
+.contact-icon i:hover{
   color: #888;
   transform: translateY(-3px);
   text-decoration: none;
   cursor: pointer;
+}
+
+.thumbColumn{
+  width: 240px;
 }
 
 .footer{
