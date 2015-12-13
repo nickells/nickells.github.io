@@ -21,16 +21,21 @@ body * {
   color: #333;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
+a {
+  color: #0e77cc;
+}
+/* line 32, ../sass/screen.scss */
 a:hover {
   text-decoration: none;
+  color: #1e92ef;
 }
-/* line 34, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 a:focus {
   text-decoration: none;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 h3 {
   color: #6d6d6d;
   font-weight: bold;
@@ -38,12 +43,12 @@ h3 {
   margin-top: 5px;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 .project-text h3 {
   font-size: 20pt;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .nick {
   border-radius: 100%;
   width: 130px;
@@ -51,19 +56,19 @@ h3 {
   border: 6px solid #6d6d6d;
   display: inline-block;
 }
-/* line 56, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .nick img {
   width: 90%;
   display: block;
   margin: -15px auto;
   transition: .5s;
 }
-/* line 61, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .nick img:hover {
   transform: rotate(360deg);
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .page-header {
   margin: 0px;
   padding: 0px 20px;
@@ -72,7 +77,7 @@ h3 {
   border-bottom: 1px solid #DDD;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 .greeting {
   font-family: "Oleo Script";
   display: inline;
@@ -81,19 +86,19 @@ h3 {
   text-shadow: 2px 2px 0px #08406c;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .card-holder {
   padding-left: 0px;
   padding-right: 0px;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .content-holder {
   padding-left: 10px;
   border-left: 1px solid #DDD;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .single-project {
   background: white;
   color: grey;
@@ -104,28 +109,28 @@ h3 {
   transform: translateX(0px);
   transition: .2s;
 }
-/* line 101, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .single-project:hover {
   transform: translateX(2px);
 }
-/* line 103, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .single-project:hover .thumb {
   opacity: 1.0;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .project-text {
   padding: 10px;
   /*padding-left: 0px;*/
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .top {
   font-family: 'Oleo Script', cursive;
   font-size: 100pt;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .siteButton, .navThing button, .project-link {
   background: #0e77cc;
   border: 1px solid transparent;
@@ -141,14 +146,14 @@ h3 {
   /*border: 0px solid transparent;*/
   transition: .2s;
 }
-/* line 135, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .siteButton:hover, .navThing button:hover, .project-link:hover {
   background: transparent;
   border: 1px solid #0b5b9c;
   color: #0b5b9c;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .navThing {
   display: flex;
   flex-direction: row;
@@ -157,12 +162,12 @@ h3 {
   padding-left: 0px;
   padding-right: 0px;
 }
-/* line 149, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .navThing a {
   width: 100%;
   margin: 2px;
 }
-/* line 153, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .navThing button {
   width: 100%;
   padding: 5px;
@@ -170,19 +175,19 @@ h3 {
   font-size: 12pt;
   margin-bottom: 2px;
 }
-/* line 160, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .navThing button:hover {
   transform: translateY(-2px);
 }
 
 @media screen and (max-width: 406px) {
-  /* line 167, ../sass/screen.scss */
+  /* line 169, ../sass/screen.scss */
   .nick {
     margin: 0 auto;
     display: block;
   }
 
-  /* line 171, ../sass/screen.scss */
+  /* line 173, ../sass/screen.scss */
   .greeting {
     margin: 0 auto;
     width: 200px;
@@ -190,106 +195,106 @@ h3 {
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 179, ../sass/screen.scss */
+  /* line 181, ../sass/screen.scss */
   .project-body-container {
     padding-left: 0px;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 186, ../sass/screen.scss */
+  /* line 188, ../sass/screen.scss */
   .nick {
     width: 200px;
     height: 200px;
   }
 
-  /* line 190, ../sass/screen.scss */
+  /* line 192, ../sass/screen.scss */
   .greeting {
     font-size: 60pt;
   }
 
-  /* line 193, ../sass/screen.scss */
+  /* line 195, ../sass/screen.scss */
   .navThing {
     flex-direction: column;
     -webkit-flex-direction: column;
   }
 
-  /* line 197, ../sass/screen.scss */
+  /* line 199, ../sass/screen.scss */
   .navThing button {
     width: 100%;
     display: block;
   }
-  /* line 200, ../sass/screen.scss */
+  /* line 202, ../sass/screen.scss */
   .navThing button:hover {
     transform: translateX(-4px);
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 206, ../sass/screen.scss */
   .main-body {
     margin: 0px 40px;
   }
 
-  /* line 207, ../sass/screen.scss */
+  /* line 209, ../sass/screen.scss */
   .content-label h3 {
     text-align: right;
   }
 
-  /* line 210, ../sass/screen.scss */
+  /* line 212, ../sass/screen.scss */
   .content-label {
     width: 15%;
   }
 
-  /* line 213, ../sass/screen.scss */
+  /* line 215, ../sass/screen.scss */
   .main-content {
     margin-bottom: 40px;
   }
 }
-/* line 217, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .project-link {
   padding: 10px;
   position: relative;
   bottom: 0px;
 }
 
-/* line 224, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .thumb {
   width: 100%;
   opacity: .8;
   /*transition: .2s;*/
 }
-/* line 228, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 .thumb:hover {
   opacity: 1.0;
 }
 
-/* line 233, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .contact-icon {
   text-align: center;
   font-size: 16pt;
   font-weight: bold;
 }
-/* line 237, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .contact-icon p {
   color: #0e77cc;
 }
-/* line 240, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .contact-icon i {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   color: #0e77cc;
   transition: .2s;
 }
-/* line 244, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 .contact-icon i:hover {
   transform: translateY(-3px);
   text-decoration: none;
   cursor: pointer;
 }
 
-/* line 252, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .thumbColumn {
   width: 240px;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .footer {
   position: relative;
   font-size: 9pt;
@@ -300,7 +305,7 @@ h3 {
   padding: 12px;
   background: #6d6d6d;
 }
-/* line 258, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .footer * {
   color: white;
 }

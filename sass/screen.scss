@@ -28,8 +28,10 @@ body{
 }
 
 a{
+  color: $color-1;
   &:hover{
-    text-decoration: none
+    text-decoration: none;
+    color: lighten($color-1,10);
   };
   &:focus{
     text-decoration: none
