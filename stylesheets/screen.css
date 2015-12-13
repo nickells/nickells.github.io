@@ -32,7 +32,7 @@ a:focus {
 
 /* line 39, ../sass/screen.scss */
 h3 {
-  color: #999967;
+  color: #6d6d6d;
   font-weight: bold;
   font-family: "Roboto Slab", serif;
   margin-top: 5px;
@@ -48,7 +48,7 @@ h3 {
   border-radius: 100%;
   width: 130px;
   height: 130px;
-  border: 6px solid #999967;
+  border: 6px solid #6d6d6d;
   display: inline-block;
 }
 /* line 56, ../sass/screen.scss */
@@ -77,8 +77,8 @@ h3 {
   font-family: "Oleo Script";
   display: inline;
   font-size: 40pt;
-  color: #52527a;
-  text-shadow: 2px 2px 0px #999967;
+  color: #0e77cc;
+  text-shadow: 2px 2px 0px #6d6d6d;
 }
 
 /* line 83, ../sass/screen.scss */
@@ -127,7 +127,7 @@ h3 {
 
 /* line 121, ../sass/screen.scss */
 .siteButton, .navThing button, .project-link {
-  background: #52527a;
+  background: #0e77cc;
   border: 1px solid transparent;
   border-radius: 1px;
   /*box-shadow: 2px 2px 2px rgba(0,0,0,.2);*/
@@ -144,8 +144,8 @@ h3 {
 /* line 135, ../sass/screen.scss */
 .siteButton:hover, .navThing button:hover, .project-link:hover {
   background: transparent;
-  border: 1px solid #3d3d5c;
-  color: #3d3d5c;
+  border: 1px solid #0b5b9c;
+  color: #0b5b9c;
 }
 
 /* line 142, ../sass/screen.scss */
@@ -269,12 +269,12 @@ h3 {
 }
 /* line 237, ../sass/screen.scss */
 .contact-icon p {
-  color: #52527a;
+  color: #0e77cc;
 }
 /* line 240, ../sass/screen.scss */
 .contact-icon i {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  color: #52527a;
+  color: #0e77cc;
   transition: .2s;
 }
 /* line 244, ../sass/screen.scss */
@@ -297,8 +297,8 @@ h3 {
   height: 40px;
   width: 100%;
   margin-top: 40px;
-  padding: 10px;
-  background: #999967;
+  padding: 12px;
+  background: #6d6d6d;
 }
 /* line 258, ../sass/screen.scss */
 .footer * {
