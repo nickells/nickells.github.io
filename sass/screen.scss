@@ -55,6 +55,7 @@ h3{
   height: 130px;
   border: 6px solid $color-1;
   display: inline-block;
+  transition: .2s;
   img{
     width: 90%;
     display: block;
@@ -79,6 +80,7 @@ h3{
   display: inline;
   font-size: 40pt;
   color: $color-1;
+  transition: .2s;
   text-shadow: 2px 2px 0px darken($color-1,20);
 }
 
@@ -165,7 +167,8 @@ h3{
   }
 }
 
-@media screen and (max-width: 421px) {
+//for centering on small screens
+@media screen and (max-width: 406px) {
   .nick{
     margin: 0 auto;
     display: block;
@@ -181,6 +184,9 @@ h3{
   .project-body-container{
     padding-left: 0px;
   }
+  .greeting{
+    transform: skew(-10deg) rotate(-10deg) scaleY(1.2) translateY(-50px) translateX(20px);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -191,6 +197,7 @@ h3{
   }
   .greeting{
     font-size: 60pt;
+    display: inline-block;
   }
   .navThing{
     flex-direction: column;
