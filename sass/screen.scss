@@ -3,15 +3,15 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-/*@import "compass/reset";*/
+ /*@import "compass/reset";*/
 
-$font-1: 'Roboto', sans-serif;
-$font-2: 'Roboto Slab', serif;
-$color-1: darken(#1E92EF,10);
-$color-2: desaturate($color-1,100%);
-$border-color: #DDD;
+ $font-1: 'Open Sans', sans-serif;
+ $font-2: 'Open Sans', sans-serif;
+ $color-1: darken(#1E92EF,10);
+ $color-2: desaturate($color-1,100%);
+ $border-color: #DDD;
 
-*{
+ *{
   /*border: 1px solid black;*/
   box-sizing: border-box;
 }
@@ -19,9 +19,10 @@ $border-color: #DDD;
 
 body{
   margin: 0px;
-  background: #FEFEFE;
+  background: #FFFFFF;
   font-size: 12pt;
   font-family: $font-1;
+  line-height: 2.0;
   *{
     color: #333;
   }
@@ -245,9 +246,9 @@ h3{
     color: $color-1;
   }
   i{
-  text-shadow: 2px 2px 2px rgba(0,0,0,.2);
-  color: $color-1;
-  transition: .2s;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    color: $color-1;
+    transition: .2s;
     &:hover{
       transform: translateY(-3px);
       text-decoration: none;
