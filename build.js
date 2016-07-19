@@ -10,7 +10,6 @@ let projectsParams = {
   outputPath: './index.html'
 }
 
-
 let toysParams = {
   templatePath: './single-project.template.html',
   documentPath: './index.html',
