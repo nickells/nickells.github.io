@@ -2,7 +2,7 @@
   {
     "title": "Keyboard Simulator 2015",   
     "img": "./thumbs/keyboardsim.png",
-    "description": "A silly little app stemming from my admirance of mechanical keyboards that plays clicky sounds with every keydown and keyup event, and shows a neat keyboard animation that maps to each key you press. Oddly satisfying to watch and listen to. Guaranteed at least 5 minutes of entertainment.",
+    "description": "A little app/experiment stemming from my admirance of mechanical keyboards that plays clicky sounds with every keydown and keyup event, and shows a neat custom CSS keyboard animation that maps to each key you press. Oddly satisfying to watch and listen to. Guaranteed at least 5 minutes of entertainment.",
     "link": "http://nickells.github.io/keyboard-simulator-2015/",
     "githubLink": "https://github.com/nickells/keyboard-simulator-2015"
   },
