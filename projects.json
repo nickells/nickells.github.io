@@ -24,7 +24,7 @@
     "title": "MementoDash",   
     "img": "./thumbs/mementodash.png",
     "description": "Loosely based off of Momentum Dashboard, this is a \"User Dashboard\" which takes images from the <a href=\"https://www.reddit.com/r/sfwpornnetwork/wiki/network\">\"SFWPorn\"</a> series on Reddit. Categories are chosen on the right side of the screen and images are accessed through the Imgur API. Built in Angular.",
-    "link": "http://www.mementodash.space/",
+    "link": "http://mementodash.herokuapp.com/",
     "githubLink": "https://github.com/nickells/mementodash.space"
   },
   {

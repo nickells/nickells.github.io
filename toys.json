@@ -9,7 +9,7 @@
   {
     "title": "clebcraft",
     "img": "./thumbs/clebcraft.png",
-    "description": "My friend made a Minecraft server and I wanted an easy way to see who was online and other server statistics. This is a small, responsive app built in Angular that polls the Minecraft server every 5 seconds for information.",
+    "description": "My friend made a Minecraft server and I wanted an easy way to see who was online and other server statistics. This is a small, responsive app built in Angular that polls the Minecraft server every 5 seconds for information. (discalimer: site subject to go offline on the whim of Caleb's basement server)",
     "link": "http://cleb.mooo.com/",
     "githubLink": "https://github.com/nickells/clebcraft/blob/master/script.js"
   },
