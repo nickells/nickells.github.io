@@ -10,7 +10,7 @@
     "title": "Breezeblocks",   
     "img": "./thumbs/breezeblocks.png",
     "description": "Built with Angular, this app gives users an intuitive drag-and-drop UI for prototyping React Native apps. Layout is converted into a JSON object and sent to the backend, where it is converted into JSX. This code is then uploaded to its own Github repo! This team project was built in fulfillment of the Fullstack Academy curriculum.",
-    "link": "http://www.breezeblocks.io/",
+    "link": "http://www.breezeblocks.tech/",
     "githubLink": "https://github.com/nickells/Breezeblocks"
   },
   {
