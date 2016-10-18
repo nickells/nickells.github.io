@@ -17,7 +17,7 @@
     "title": "Dictatone",   
     "img": "./thumbs/dictatone.png",
     "description": "Allows a user to sing, hum, or whistle into their microphone and see, magically, their melodies transcribed into printable sheet music. Won a \"Mad Scientist\" hackathon award at Fullstack. Also built in fulfillment of the Fullstack Academy curriculum.",
-    "link": "http://dictatone.herokuapp.com/",
+    "link": "https://dictatone.herokuapp.com/",
     "githubLink": "https://github.com/nickells/Dictatone"
   },
   {
