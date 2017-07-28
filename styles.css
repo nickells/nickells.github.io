@@ -52,6 +52,7 @@ p {
 }
 a {
   color: #232323;
+  text-decoration: none;
 }
 .thing {
   display: block;
@@ -62,6 +63,14 @@ a {
 .thing h3 {
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+.thing span:nth-child(1) {
+  text-decoration: underline;
+  margin-right: .4em;
+}
+.thing span:nth-child(2) {
+  font-family: "NeueHassRegular";
+  color: #AAA;
 }
 .thing p {
   font-family: "NeueHassRegular";
