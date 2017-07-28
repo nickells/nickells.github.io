@@ -33,7 +33,7 @@ module.exports = [{
   context: path.join(__dirname, 'src'),
   entry: './styles/index.less',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: __dirname,
     filename: 'styles.css',
   },
   module: {
