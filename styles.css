@@ -57,8 +57,13 @@ a {
 .thing {
   display: block;
   margin-bottom: 80px;
-  font-size: 24px;
+  font-size: 20px;
   margin-left: -0.09em;
+}
+@media screen and (min-width: 768px) {
+  .thing {
+    font-size: 24px;
+  }
 }
 .thing h3 {
   text-transform: uppercase;
