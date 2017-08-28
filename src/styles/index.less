@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'NeueHassRegular';
+  font-family: 'NeueHaasRegular';
   src: url('/fonts/NeueHaasUnicaPro-Regular.woff') format('woff');
 }
 
@@ -8,11 +8,26 @@
   src: url('/fonts/NeueHaasUnicaPro-Bold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'AkzidenzGroteskMedium';
+  src: url('/fonts/AkzidenzGrotesk-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'AkzidenzGroteskRegular';
+  src: url('/fonts/AkzidenzGrotesk-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'AkzidenzGroteskLight';
+  src: url('/fonts/AkzidenzGrotesk-Light.otf') format('opentype');
+}
+
 body {
   background: #EFEFEF;
   color: #232323;
   margin: 0;
-  font-family: "NeueHassBold";
+  font-family: "AkzidenzGroteskMedium";
   font-kerning: normal;
   margin-left: 20px;
   margin-right: 20px;
@@ -33,6 +48,7 @@ h1, h2, h3, p {
   font-size: 80px;
   text-align: left;
   font-weight: bold;
+  font-family: "AkzidenzGroteskRegular";
   margin-bottom: 80px;
   margin-top: 30px;
   margin-left: -0.09em;
@@ -43,7 +59,7 @@ h1, h2, h3, p {
 
 #copy {
   font-size: 32px;
-  font-family: "NeueHassRegular";
+  font-family: "AkzidenzGroteskLight";
   margin-bottom: 80px;
   margin-left: -0.09em;
   max-width: 800px;
@@ -72,12 +88,12 @@ a {
       margin-right: .4em;
     }
     &:nth-child(2) {
-      font-family: "NeueHassRegular";
+      font-family: "AkzidenzGroteskLight";
       color: #AAA;
     }
   }
   p {
-    font-family: "NeueHassRegular";
+    font-family: "AkzidenzGroteskLight";
     display: inline-block;
   }
   &:hover {
@@ -86,4 +102,9 @@ a {
       background: yellow;
     }
   }
+}
+
+#th {
+  display: inline-block;
+  margin-left: .06em;
 }
