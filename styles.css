@@ -104,3 +104,51 @@ a {
   display: inline-block;
   margin-left: .06em;
 }
+#clock {
+  position: fixed;
+  top: calc(50%);
+  left: calc(50%);
+  transform: scale(100vw);
+}
+.semicircle {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  border-color: blue;
+  border-style: solid;
+  border-radius: 100% 0% 0% 0%;
+  border-width: 10px;
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+.semicircle.inner {
+  width: 160px;
+  height: 160px;
+}
+.hand {
+  display: inline-block;
+  position: absolute;
+  transform-origin: bottom right;
+  opacity: 0.33;
+}
+.minutes .semicircle {
+  width: 160px;
+  height: 160px;
+  border-color: orange;
+}
+.minutes .semicircle.inner {
+  width: 120px;
+  height: 120px;
+}
+.seconds .semicircle {
+  width: 120px;
+  height: 120px;
+  border-color: green;
+}
+.seconds .semicircle.inner {
+  width: 80px;
+  height: 80px;
+}

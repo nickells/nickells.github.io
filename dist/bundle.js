@@ -70,17 +70,62 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html>\n<head>\n  <title>Nick Ellsworth</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n</head>\n<body>\n  <p id=\"hero\">\n    Nick <nobr>Ellswor<span id=\"th\">th</span></nobr>\n  </p>\n  <h2 id=\"copy\">\n    I am a creative developer working at Squarespace. I&nbsp;enjoy making things. Here are some things I have made:\n  </h2>\n  <a class=\"thing\" href=\"http://nickmakes.website/spatial-audio\">\n    <h3><span>Ambience Generator</span><span>2017</span></h3>\n    <p>Block out the noisy world around you with great precision.</p>\n  </a>\n  <a class=\"thing\" href=\"http://www.clavier.party\">\n    <h3><span>Clavier Party</span><span>2017</span></h3>\n    <p>Make chaotic piano tunes with your friends.</p>\n  </a>\n  <a class=\"thing\" href=\"http://chills.network\">\n    <h3><span>Anagrammer</span><span>2017</span></h3>\n    <p>Make a word into another word using magic and spelling.</p>\n  </a>\n  <a class=\"thing\" href=\"http://nickmakes.website/clumsy-typer\">\n    <h3><span>Clumsy Typer</span><span>2017</span></h3>\n    <p>Automate the text input of a careless individual.</p>\n  </a>\n  <a class=\"thing\" href=\"http://bpm-count.firebaseapp.com\">\n    <h3><span>BPM Counter</span><span>2016</span></h3>\n    <p>Figure out how fast you can snap your fingers at regular intervals.</p>\n  </a>\n  <a class=\"thing\" href=\"http://nickmakes.website/knob\">\n    <h3><span>Knob</span><span>2016</span></h3>\n    <p>Grab onto a circle and pretend you are affecting the world.</p>\n  </a>\n  <a class=\"thing\" href=\"https://chrome.google.com/webstore/detail/delta-for-youtube/ofbfdabicijcdjoeemcgabeeapciibbf\">\n    <h3><span>Delta for Youtube</span><span>2016</span></h3>\n    <p>Eliminate the effort of subtraction from your media experience.</p>\n  </a>\n  <a class=\"thing\" href=\"https://www.npmjs.com/package/tiny-interpolator\">\n    <h3><span>Tiny Interpolator</span><span>2016</span></h3>\n    <p>Easily make lists of things from differently formatted lists of things.</p>\n  </a>\n  <a class=\"thing\" href=\"http://nickmakes.website/fingerTrainer\">\n    <h3><span>Finger Trainer</span><span>2016</span></h3>\n    <p>Learn to touch-type the weird looking shapes on top of the keyboard.</p>\n  </a>\n  <a class=\"thing\" href=\"http://nickmakes.website/slack-emoji-converter/\">\n    <h3><span>Emoji Text Converter</span><span>2015</span></h3>\n    <p>Bother your coworkers by making words out of pictures.</p>\n  </a>\n  <a class=\"thing\" href=\"http://nickmakes.website/keyboard-simulator-2015/\">\n    <h3><span>Keyboard Simulator</span><span>2015</span></h3>\n    <p>Imagine you are using a keyboard while using a keyboard.</p>\n  </a>\n  <a class=\"thing\" href=\"http://blipcrowd.herokuapp.com/\">\n    <h3><span>Blipcrowd</span><span>2015</span></h3>\n    <p>Press squares to create music with strangers.</p>\n  </a>\n  <script>\n    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');\n    ga('create', 'UA-71299429-1', 'auto');\n    ga('send', 'pageview');\n  </script>\n\n</body>\n</html>"
+module.exports = "<!DOCTYPE html>\n<html>\n<head>\n  <title>Nick Ellsworth</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n</head>\n<body>\n  <p id=\"hero\">\n    Nick <nobr>Ellswor<span id=\"th\">th</span></nobr>\n  </p>\n  <h2 id=\"copy\">\n    I am a creative developer working at Squarespace. I&nbsp;enjoy making things. Here are some things I have made:\n  </h2>\n  <a class=\"thing\" href=\"http://nickmakes.website/spatial-audio\">\n    <h3><span>Ambience Generator</span><span>2017</span></h3>\n    <p>Block out the noisy world around you with great precision.</p>\n  </a>\n  <a class=\"thing\" href=\"http://www.clavier.party\">\n    <h3><span>Clavier Party</span><span>2017</span></h3>\n    <p>Make chaotic piano tunes with your friends.</p>\n  </a>\n  <a class=\"thing\" href=\"http://chills.network\">\n    <h3><span>Anagrammer</span><span>2017</span></h3>\n    <p>Make a word into another word using magic and spelling.</p>\n  </a>\n  <a class=\"thing\" href=\"http://nickmakes.website/clumsy-typer\">\n    <h3><span>Clumsy Typer</span><span>2017</span></h3>\n    <p>Automate the text input of a careless individual.</p>\n  </a>\n  <a class=\"thing\" href=\"http://bpm-count.firebaseapp.com\">\n    <h3><span>BPM Counter</span><span>2016</span></h3>\n    <p>Figure out how fast you can snap your fingers at regular intervals.</p>\n  </a>\n  <a class=\"thing\" href=\"http://nickmakes.website/knob\">\n    <h3><span>Knob</span><span>2016</span></h3>\n    <p>Grab onto a circle and pretend you are affecting the world.</p>\n  </a>\n  <a class=\"thing\" href=\"https://chrome.google.com/webstore/detail/delta-for-youtube/ofbfdabicijcdjoeemcgabeeapciibbf\">\n    <h3><span>Delta for Youtube</span><span>2016</span></h3>\n    <p>Eliminate the effort of subtraction from your media experience.</p>\n  </a>\n  <a class=\"thing\" href=\"https://www.npmjs.com/package/tiny-interpolator\">\n    <h3><span>Tiny Interpolator</span><span>2016</span></h3>\n    <p>Easily make lists of things from differently formatted lists of things.</p>\n  </a>\n  <a class=\"thing\" href=\"http://nickmakes.website/fingerTrainer\">\n    <h3><span>Finger Trainer</span><span>2016</span></h3>\n    <p>Learn to touch-type the weird looking shapes on top of the keyboard.</p>\n  </a>\n  <a class=\"thing\" href=\"http://nickmakes.website/slack-emoji-converter/\">\n    <h3><span>Emoji Text Converter</span><span>2015</span></h3>\n    <p>Bother your coworkers by making words out of pictures.</p>\n  </a>\n  <a class=\"thing\" href=\"http://nickmakes.website/keyboard-simulator-2015/\">\n    <h3><span>Keyboard Simulator</span><span>2015</span></h3>\n    <p>Imagine you are using a keyboard while using a keyboard.</p>\n  </a>\n  <a class=\"thing\" href=\"http://blipcrowd.herokuapp.com/\">\n    <h3><span>Blipcrowd</span><span>2015</span></h3>\n    <p>Press squares to create music with strangers.</p>\n  </a>\n  <div id=\"clock\">\n    <div class=\"hand minutes\" id=\"minutes\">\n      <div class=\"outer semicircle\"></div>\n      <div class=\"inner semicircle\"></div>\n    </div>\n    <div class=\"hand hours\" id=\"hours\">\n      <div class=\"outer semicircle\"></div>\n      <div class=\"inner semicircle\"></div>\n    </div>\n    <div class=\"hand seconds\" id=\"seconds\">\n      <div class=\"outer semicircle\"></div>\n      <div class=\"inner semicircle\"></div>\n    </div>\n  </div>\n  <script type=\"text/javascript\" src=\"dist/bundle.js\"></script>\n  <script>\n    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');\n    ga('create', 'UA-71299429-1', 'auto');\n    ga('send', 'pageview');\n  </script>\n\n</body>\n</html>"
 
 /***/ }),
-/* 1 */,
+/* 1 */
+/***/ (function(module, exports) {
+
+function clock() {
+  const $secondHand = document.getElementById('seconds')
+  const $minuteHand = document.getElementById('minutes')
+  const $hourHand = document.getElementById('hours')
+
+  const update = () => {
+    let time = new Date()
+    let hours = time.getHours() % 12
+    let minutes = time.getMinutes() 
+    let seconds = time.getSeconds() % 60
+    let milliseconds = time.getMilliseconds()
+
+    let secondsAngle = (360 * (seconds / 60)) + (( 360 / 60 ) * (milliseconds / 1000))
+    let minutesAngle = (360 * (minutes / 60)) + (secondsAngle / 60)
+    let hoursAngle = (360 * (hours / 12)) + (minutesAngle / 60)
+
+    $secondHand.style.transform = `rotate(${secondsAngle}deg)`
+    $minuteHand.style.transform = `rotate(${minutesAngle}deg)`
+    $hourHand.style.transform = `rotate(${hoursAngle}deg)`
+
+  }
+
+  function loop(){
+    setTimeout(() => {
+      update()
+      requestAnimationFrame(loop)
+    }, ( 1000 / 60 ))
+  }
+
+  return {
+    start: () => {
+      loop()
+      requestAnimationFrame(loop)
+    }
+  }
+}
+
+module.exports =  clock()
+
+/***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // require index.html so livereload will watch it
 const index = __webpack_require__(0) // eslint-disable-line no-unused-vars
+const clock = __webpack_require__(1)
 
+console.log(clock)
 
+clock.start()
 
 /***/ })
 /******/ ]);
