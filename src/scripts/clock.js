@@ -21,15 +21,14 @@ function clock() {
   }
 
   function loop(){
+    update()
     setTimeout(() => {
-      update()
       requestAnimationFrame(loop)
     }, ( 1000 / 60 ))
   }
 
   return {
     start: () => {
-      loop()
       requestAnimationFrame(loop)
     }
   }
