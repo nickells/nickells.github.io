@@ -106,8 +106,8 @@ a {
 }
 #clock {
   position: fixed;
-  top: calc(50%);
-  left: calc(50%);
+  top: 50%;
+  right: 25%;
   transform: scale(100vw);
 }
 .semicircle {
@@ -120,7 +120,7 @@ a {
   border-color: blue;
   border-style: solid;
   border-radius: 100% 0% 0% 0%;
-  border-width: 10px;
+  border-width: 2px;
   transform: rotate(45deg);
   transform-origin: bottom right;
 }
@@ -132,14 +132,14 @@ a {
   display: inline-block;
   position: absolute;
   transform-origin: bottom right;
-  opacity: 0.33;
+  opacity: 0.22;
 }
-.minutes .semicircle {
+.hours .semicircle {
   width: 160px;
   height: 160px;
   border-color: orange;
 }
-.minutes .semicircle.inner {
+.hours .semicircle.inner {
   width: 120px;
   height: 120px;
 }
