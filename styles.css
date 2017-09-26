@@ -106,7 +106,7 @@ a {
   margin-left: .06em;
 }
 #clock {
-  position: absolute;
+  position: fixed;
   top: 50%;
   right: 25%;
   opacity: 0.99;
