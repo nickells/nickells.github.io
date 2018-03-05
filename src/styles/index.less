@@ -23,18 +23,31 @@
   src: url('/fonts/AkzidenzGrotesk-Light.otf') format('opentype');
 }
 
+@main-background: #EFEFEF;
+@main-content: #232323;
+.mixin-body-font {
+  font-size: 20px;
+  @media screen and (min-width: 768px){
+    font-size: 24px;
+  }
+
+  margin-left: -0.09em;
+}
+
 body {
-  background: #EFEFEF;
-  color: #232323;
+  background: @main-background;
+  color: @main-content;
   margin: 0;
   font-family: "AkzidenzGroteskMedium";
   font-kerning: normal;
-  margin-left: 20px;
-  margin-right: 20px;
-  overflow-x: none;
+}
+
+section {  
+  padding-left: 20px;
+  padding-right: 20px;
   @media screen and (min-width: 768px){
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -58,7 +71,7 @@ h1, h2, h3, p {
   }
 }
 
-#copy {
+h2 {
   font-size: 32px;
   font-family: "AkzidenzGroteskLight";
   margin-bottom: 80px;
@@ -67,18 +80,14 @@ h1, h2, h3, p {
 }
 
 a {
-  color: #232323;
+  color: @main-content;
   text-decoration: none;
 }
 
 .thing {
   display: block;
-  margin-bottom: 80px;
-  font-size: 20px;
-  @media screen and (min-width: 768px){
-    font-size: 24px;
-  }
-  margin-left: -0.09em;
+  padding-bottom: 80px;
+  .mixin-body-font();
   h3 {
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -114,7 +123,6 @@ a {
   position: fixed;
   top: 50%;
   right: 25%;
-  opacity: 0.99;
 }
 
 .semicircle {
@@ -129,6 +137,7 @@ a {
   border-style: solid;
   border-radius: 100% 0% 0% 0%;
   border-width: 2px;
+  will-change: 'transform';
   transform: rotate(45deg);
   transform-origin: bottom right;
 
@@ -169,4 +178,29 @@ a {
       height: 80px;
     }
    }  
+}
+
+section.dark {
+  height: auto;
+  background-color: @main-content;
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 80px;
+  .mixin-body-font();
+  .thing {
+    color: @main-background;
+    &:hover {
+      p {
+        color: @main-content;
+      }
+    }
+  }
+  h2 {
+    color: @main-background;
+  }
+  @media screen and (min-width: 768px){
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
