@@ -25,6 +25,7 @@
 
 @main-background: #EFEFEF;
 @main-content: #232323;
+@light-gray: #AAA;
 .mixin-body-font {
   font-size: 20px;
   @media screen and (min-width: 768px){
@@ -99,7 +100,7 @@ a {
     }
     &:nth-child(2) {
       font-family: "AkzidenzGroteskLight";
-      color: #AAA;
+      color: @light-gray;
     }
   }
   p {
@@ -202,5 +203,37 @@ section.dark {
   @media screen and (min-width: 768px){
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+
+section:last-of-type {
+  margin-bottom: 40px; // room for footer
+}
+
+footer {
+  position: fixed;
+  background-color: @main-background;
+  color: @main-content;
+  border-top: 1px solid @light-gray;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-family: 'AkzidenzGroteskLight';
+  box-sizing: border-box;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 768px){
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  a {
+    padding: 10px;
+    &:hover {
+      background: yellow;
+    }
   }
 }
