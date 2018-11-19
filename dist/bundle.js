@@ -142,7 +142,7 @@ const hijack = (evt) => {
     }, 500)
   })
   $warning.getElementsByClassName('yes')[0].addEventListener('touchend', () => {
-    window.location.href = evt.target.href
+    window.location.href = evt.currentTarget.href
   })
 }
 
