@@ -58,6 +58,11 @@ h1, h2, h3, p {
   font-weight: normal;
 }
 
+h1 {
+  position: absolute;
+  opacity: 0;
+}
+
 #hero {
   line-height: 1em;
   font-size: 80px;
@@ -235,5 +240,35 @@ footer {
     &:hover {
       background: yellow;
     }
+  }
+}
+
+.gate {
+  position: fixed;
+  top: 0;
+  background: @main-content;
+  color: @main-background;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-family: 'AkzidenzGroteskLight';
+
+  padding: 2em;
+  width: 100vw;
+  height: 100vh;
+
+  > div {
+    padding-top: 2em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  button {
+    background: @main-background;
+    color: @main-content;
+    padding: 1em 2em;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'AkzidenzGroteskLight';
+
   }
 }
