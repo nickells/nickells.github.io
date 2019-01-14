@@ -230,13 +230,24 @@ footer {
 
   padding-left: 20px;
   padding-right: 20px;
+  
+  font-size: 12px;
+  @media screen and (min-width: 480px){
+    font-size: 16px;
+  }
   @media screen and (min-width: 768px){
     padding-left: 50px;
     padding-right: 50px;
   }
 
+  > span {
+    padding: 10px 0px;
+    margin-right: auto;
+    margin-left: -5px;
+  }
   a {
     padding: 10px;
+    margin-right: -5px;
     &:hover {
       background: yellow;
     }
