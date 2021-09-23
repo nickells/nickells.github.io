@@ -23,9 +23,7 @@
   src: url('/fonts/AkzidenzGrotesk-Light.otf') format('opentype');
 }
 
-@main-background: #EFEFEF;
-@main-content: #232323;
-@light-gray: #AAA;
+
 .mixin-body-font {
   font-size: 20px;
   @media screen and (min-width: 768px){
@@ -36,8 +34,11 @@
 }
 
 body {
-  background: @main-background;
-  color: @main-content;
+  --main-background: #EFEFEF;
+  --main-content: #232323;
+  --light-gray: #AAA;
+  background: var(--main-background);
+  color: var(--main-content);
   margin: 0;
   font-family: "AkzidenzGroteskMedium";
   font-kerning: normal;
@@ -86,7 +87,7 @@ h2 {
 }
 
 a {
-  color: @main-content;
+  color: var(--main-content);
   text-decoration: none;
 }
 
@@ -105,7 +106,7 @@ a {
     }
     &:nth-child(2) {
       font-family: "AkzidenzGroteskLight";
-      color: @light-gray;
+      color: var(--light-gray);
     }
   }
   p {
@@ -129,6 +130,7 @@ a {
   position: fixed;
   top: 50%;
   right: 25%;
+  pointer-events: none;
 }
 
 .semicircle {
@@ -188,22 +190,22 @@ a {
 
 section.dark {
   height: auto;
-  background-color: @main-content;
+  background-color: var(--main-content);
   display: block;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 80px;
   .mixin-body-font();
   .thing {
-    color: @main-background;
+    color: var(--main-background);
     &:hover {
       p {
-        color: @main-content;
+        color: var(--main-content);
       }
     }
   }
   h2 {
-    color: @main-background;
+    color: var(--main-background);
   }
   @media screen and (min-width: 768px){
     padding-left: 50px;
@@ -217,9 +219,9 @@ section:last-of-type {
 
 footer {
   position: fixed;
-  background-color: @main-background;
-  color: @main-content;
-  border-top: 1px solid @light-gray;
+  background-color: var(--main-background);
+  color: var(--main-content);
+  border-top: 1px solid var(--light-gray);
   width: 100%;
   bottom: 0;
   display: flex;
@@ -257,8 +259,8 @@ footer {
 .gate {
   position: fixed;
   top: 0;
-  background: @main-content;
-  color: @main-background;
+  background: var(--main-content);
+  color: var(--main-background);
   box-sizing: border-box;
   font-size: 24px;
   font-family: 'AkzidenzGroteskLight';
@@ -274,12 +276,18 @@ footer {
     justify-content: space-between;
   }
   button {
-    background: @main-background;
-    color: @main-content;
+    background: var(--main-background);
+    color: var(--main-content);
     padding: 1em 2em;
     border: none;
     text-transform: uppercase;
     font-family: 'AkzidenzGroteskLight';
 
   }
+}
+
+#canvas {
+  position: fixed;
+  pointer-events: none;
+  top: 0;
 }
