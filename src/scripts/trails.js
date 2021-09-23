@@ -4,8 +4,8 @@ const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
 canvas.style.cursor = "none";
 
-const grid_size = 18;
-const font_size = 18;
+const grid_size = 24;
+const font_size = 24;
 const particle_duration = 800;
 const trail_length = 51;
 const trail_width = 300;

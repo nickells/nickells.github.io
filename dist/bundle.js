@@ -67,7 +67,8 @@
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */
+/* 0 */,
+/* 1 */
 /***/ (function(module, exports) {
 
 function clock() {
@@ -108,7 +109,7 @@ function clock() {
 module.exports =  clock()
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports) {
 
 const links = Array.from(document.querySelectorAll("a[data-unfriendly]"))
@@ -148,7 +149,36 @@ const hijackLinks = () => {
 module.exports = hijackLinks
 
 /***/ }),
-/* 2 */
+/* 3 */
+/***/ (function(module, exports) {
+
+const $year = document.getElementById('year')
+
+const update = () => {
+  $year.innerText = new Date().getFullYear()
+}
+
+module.exports = update
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// require index.html so livereload will watch it
+const clock = __webpack_require__(1)
+const gate = __webpack_require__(2)
+const { render: renderTrails } = __webpack_require__(5)
+const updateYear = __webpack_require__(3)
+
+renderTrails()
+clock.start()
+updateYear()
+if ('ontouchstart' in window) gate()
+
+console.log('YELLOS')
+
+/***/ }),
+/* 5 */
 /***/ (function(module, exports) {
 
 console.log('hi')
@@ -157,8 +187,8 @@ const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
 canvas.style.cursor = "none";
 
-const grid_size = 18;
-const font_size = 18;
+const grid_size = 24;
+const font_size = 24;
 const particle_duration = 800;
 const trail_length = 51;
 const trail_width = 300;
@@ -298,35 +328,6 @@ render();
 module.exports = {
   render
 }
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-const $year = document.getElementById('year')
-
-const update = () => {
-  $year.innerText = new Date().getFullYear()
-}
-
-module.exports = update
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// require index.html so livereload will watch it
-const clock = __webpack_require__(0)
-const gate = __webpack_require__(1)
-const { render: renderTrails } = __webpack_require__(2)
-const updateYear = __webpack_require__(3)
-
-renderTrails()
-clock.start()
-updateYear()
-if ('ontouchstart' in window) gate()
-
-console.log('YELLOS')
 
 /***/ })
 /******/ ]);
