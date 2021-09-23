@@ -70,12 +70,6 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html>\n<html>\n\n<head>\n  <title>Nick Ellsworth</title>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <meta property=\"og:image\" content=\"website.png\">\n</head>\n\n<body>\n  <script defer type=\"text/javascript\" src=\"dist/bundle.js\"></script>\n  <section>\n    <h1>Nick Ellsworth's web portfolio</h1>\n    <p id=\"hero\">\n      Nick <nobr>Ellswor<span id=\"th\">th</span></nobr>\n    </p>\n    <h2 id=\"copy\">\n      NYC-based creative web developer. Here's some stuff you may find fun or weird.\n    </h2>\n    <a class=\"thing\" href=\"https://nickmakes.website/particles\">\n      <h3><span>Particle Toy</span><span>2021</span></h3>\n      <p>A visualizer to create fun physics-based particle atmospheres</p>\n    </a>\n    <a class=\"thing\" href=\"https://nickmakes.website/three-midi-vis/build/\">\n      <h3><span>3D Midi Visualizer</span><span>2021</span></h3>\n      <p>A synthwave-themed 3D space to display your midi notes</p>\n    </a>\n    <a class=\"thing\" href=\"https://stardewna.me/\">\n      <h3><span>Stardew Name</span><span>2021</span></h3>\n      <p>A port of the name generator from Stardew Valley</p>\n    </a>\n    <a class=\"thing\" href=\"https://nickmakes.website/rain/build/\">\n      <h3><span>Rain</span><span>2019 (updated 2021)</span></h3>\n      <p>Spatial white noise rain simulator</p>\n    </a>\n    <a class=\"thing\" href=\"https://nickmakes.website/frets/\">\n      <h3><span>Frets</span><span>2020</span></h3>\n      <p>A tool to learn the guitar fretboard and associated scales</p>\n    </a>\n    <a class=\"thing\" href=\"http://strings.glitch.me/\">\n      <h3><span>Strings</span><span>2018</span></h3>\n      <p>Elastic physics simulation (mostly working)</p>\n    </a>\n    <a class=\"thing\" href=\"http://nickmakes.website/drummer\">\n      <h3><span>Drummer</span><span>2018</span></h3>\n      <p>Procedrual drum loop generator</p>\n    </a>\n    <a class=\"thing\" href=\"http://nickmakes.website/gif-saver/?urls=https://i.imgur.com/frFzz7e.gif,https://ubisafe.org/images/gif-transparent-1.gif\">\n      <h3><span>Gif screen saver</span><span>2018</span></h3>\n      <p>Prevent dead pixels with internet art</p>\n    </a>\n    <a class=\"thing\" href=\"http://nickmakes.website/knob\">\n      <h3><span>Knob</span><span>2016 (updated 2018)</span></h3>\n      <p>Customizable knob interface</p>\n    </a>\n    <a class=\"thing\" href=\"http://nickmakes.website/metronome\">\n      <h3><span>Metronome</span><span>2018</span></h3>\n      <p>Timekeeping device</p>\n    </a>\n    <a class=\"thing\" data-unfriendly href=\"http://nickmakes.website/pillow\">\n      <h3><span>Flip Grid</span><span>2018</span></h3>\n      <p>Hover effect demo</p>\n    </a>\n    <a class=\"thing\" href=\"http://nickmakes.website/spatial-audio\">\n      <h3><span>Ambience Generator</span><span>2017</span></h3>\n      <p>Spatial audio toy for ambient sounds</p>\n    </a>\n    <a class=\"thing\" data-unfriendly href=\"http://www.clavier.party\">\n      <h3><span>Clavier Party</span><span>2017</span></h3>\n      <p>Multiplayer music \"game\"</p>\n    </a>\n    <a class=\"thing\" data-unfriendly href=\"https://codepen.io/nickells/full/gWEPLd/\">\n      <h3><span>CSS Hover card</span><span>2017</span></h3>\n      <p>Matte 3D effect using CSS</p>\n    </a>\n    <a class=\"thing\" href=\"http://chills.network\">\n      <h3><span>Anagrammer</span><span>2017</span></h3>\n      <p>Word-to-word animation demo</p>\n    </a>\n    <a class=\"thing\" href=\"http://nickmakes.website/clumsy-typer\">\n      <h3><span>Clumsy Typer</span><span>2017</span></h3>\n      <p>Semi-useless typing simulation</p>\n    </a>\n    <a class=\"thing\" href=\"http://bpm-count.firebaseapp.com\">\n      <h3><span>BPM Counter</span><span>2016</span></h3>\n      <p>Music tool for counting tempo</p>\n    </a>\n    <a class=\"thing\" href=\"https://chrome.google.com/webstore/detail/delta-for-youtube/ofbfdabicijcdjoeemcgabeeapciibbf\">\n      <h3><span>Delta for Youtube</span><span>2016</span></h3>\n      <p>Subtle Chrome plugin for extra Youtube UI</p>\n    </a>\n    <a class=\"thing\" href=\"https://www.npmjs.com/package/tiny-interpolator\">\n      <h3><span>Tiny Interpolator</span><span>2016</span></h3>\n      <p>Barebones templating NPM module</p>\n    </a>\n    <a class=\"thing\" href=\"http://nickmakes.website/fingerTrainer\">\n      <h3><span>Finger Trainer</span><span>2016</span></h3>\n      <p>Dexterity exercise for symbols on the keyboard</p>\n    </a>\n    <a class=\"thing\" href=\"http://nickmakes.website/slack-emoji-converter/\">\n      <h3><span>Emoji Text Converter</span><span>2015</span></h3>\n      <p>Converts emoji into pasteable text</p>\n    </a>\n    <a class=\"thing\" href=\"https://codepen.io/nickells/full/ZbymYe/\">\n      <h3><span>Burger button</span><span>2015</span></h3>\n      <p>Burger button</p>\n    </a>\n    <a class=\"thing\" data-unfriendly href=\"http://nickmakes.website/keyboard-simulator-2015/\">\n      <h3><span>Keyboard Simulator</span><span>2015</span></h3>\n      <p>Imagine you are using a keyboard while using a keyboard.</p>\n    </a>\n    <a class=\"thing\" href=\"http://blipcrowd.herokuapp.com/\">\n      <h3><span>Blipcrowd</span><span>2015</span></h3>\n      <p>Multiplayer music sequencer</p>\n    </a>\n  </section>\n  <section class=\"dark\">\n    <h2>Other things I do:</h2>\n    <a class=\"thing\" href=\"https://soundcloud.com/dimmrswitch/\">\n      <h3><span>Music</span><span>2012 - Now</h3>\n      <p>Bleeps, bloops, and miscellaneous blops</p>\n    </a>\n    <a class=\"thing\" href=\"https://nickellsworth.photography/\">\n      <h3><span>Photography</span><span>2005 - Now</h3>\n      <p>Pixels arranged neatly and with intention</p>\n    </a>\n  </section>\n  <div id=\"clock\">\n    <div class=\"hand minutes\" id=\"minutes\">\n      <div class=\"outer semicircle\"></div>\n      <div class=\"inner semicircle\"></div>\n    </div>\n    <div class=\"hand hours\" id=\"hours\">\n      <div class=\"outer semicircle\"></div>\n      <div class=\"inner semicircle\"></div>\n    </div>\n    <div class=\"hand seconds\" id=\"seconds\">\n      <div class=\"outer semicircle\"></div>\n      <div class=\"inner semicircle\"></div>\n    </div>\n  </div>\n  <footer>\n    <span>Copyright © <span id=\"year\">2019</span> Nick&nbsp;Ellsworth</span>\n    <a href=\"https://github.com/nickells\">Github</a>\n    <a href=\"https://www.linkedin.com/in/nickells/\">LinkedIn</a>\n    <a href=\"https://twitter.com/nickells\">Twitter</a>\n  </footer>\n  <!-- Google Analytics -->\n  <script>\n    (function (i, s, o, g, r, a, m) {\n      i['GoogleAnalyticsObject'] = r;\n      i[r] = i[r] || function () {\n        (i[r].q = i[r].q || []).push(arguments)\n      }, i[r].l = 1 * new Date();\n      a = s.createElement(o),\n        m = s.getElementsByTagName(o)[0];\n      a.async = 1;\n      a.src = g;\n      m.parentNode.insertBefore(a, m)\n    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');\n\n    ga('create', 'UA-71299429-1', 'auto');\n    ga('send', 'pageview');\n  </script>\n  <!-- End Google Analytics -->\n\n\n</body>\n\n</html>"
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
 function clock() {
   const $secondHand = document.getElementById('seconds')
   const $minuteHand = document.getElementById('minutes')
@@ -114,7 +108,7 @@ function clock() {
 module.exports =  clock()
 
 /***/ }),
-/* 2 */
+/* 1 */
 /***/ (function(module, exports) {
 
 const links = Array.from(document.querySelectorAll("a[data-unfriendly]"))
@@ -154,6 +148,158 @@ const hijackLinks = () => {
 module.exports = hijackLinks
 
 /***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+console.log('hi')
+
+const canvas = document.getElementById("canvas");
+const context = canvas.getContext("2d");
+canvas.style.cursor = "none";
+
+const grid_size = 18;
+const font_size = 18;
+const particle_duration = 800;
+const trail_length = 51;
+const trail_width = 300;
+const trail_delay = 100
+const color = document.body.style.getPropertyValue("--light-gray") || "#232323"
+
+let width = window.innerWidth;
+let height = window.innerHeight;
+
+canvas.width = width;
+canvas.height = height;
+
+window.addEventListener("resize", () => {
+  width = window.innerWidth;
+  height = window.innerHeight;
+  canvas.width = width;
+  canvas.height = height;
+  context.textBaseline = "middle";
+  context.textAlign = "center";
+});
+
+const glyph = "↖";
+const trailGlyph = "･✻◦✷✧○❋";
+
+let trail = [];
+
+context.textBaseline = "middle";
+context.textAlign = "center";
+context.fillStyle = color
+
+const toGrid = (x, y) =>{
+  return [
+    Math.round(x / grid_size) * grid_size,
+    Math.round(y / grid_size) * grid_size,
+  ]
+}
+
+document.body.addEventListener("mousedown", (e) => {
+  const [originX, originY] = [e.clientX, e.clientY]
+
+  // get x and y for an explosion
+  for (let i = 0; i < trail_length / 2; i++) {
+    const randomX = Math.floor((Math.random() * trail_width) - trail_width / 2);
+    const randomY = Math.floor((Math.random() * trail_width) - trail_width / 2);
+    trail.unshift({
+      originX,
+      originY, 
+      deltaX: randomX,
+      deltaY: randomY,
+      start: performance.now(),
+      char: trailGlyph[Math.floor(Math.random() * trailGlyph.length)]
+    });
+  }
+ })
+
+document.body.addEventListener("mousemove", (e) => {
+  const [originX, originY] = [e.clientX, e.clientY]
+
+  // if no last cursor, "mock" it with this cursor's values
+  const lastCursor = trail[0] || {
+    originX,
+    originY
+  }
+  
+  // debouncer
+  const [movementX, movementY] = toGrid(originX - lastCursor.originX, originY - lastCursor.originY)
+  if (trail[0] && movementX === 0 && movementY === 0) return
+
+  // calculate eventual spread location
+  for (let i = 0; i < 1; i++) {
+    const randomX = Math.floor((Math.random() * trail_width) - trail_width / 2);
+    const randomY = Math.floor((Math.random() * trail_width) - trail_width / 2);
+
+    trail.unshift({
+      originX,
+      originY, 
+      deltaX: randomX,
+      deltaY: randomY,
+      start: performance.now(),
+      char: trailGlyph[Math.floor(Math.random() * trailGlyph.length)]
+    });
+  }
+  
+});
+
+
+const render = () => {
+  context.clearRect(0, 0, width, height);
+  const [cursor, ...tail] = trail;
+  
+  tail.forEach((item, index) => {
+    const life = performance.now() - item.start;
+    
+    // don't render yet if under delay time
+    if (life < trail_delay) return
+    
+    const adjustedLifespan = life - trail_delay
+    
+    // don't render if it's over the duration
+    if (adjustedLifespan > particle_duration) {
+
+      trail.pop()
+      return
+    }
+    
+    const lifeRatio = adjustedLifespan / particle_duration
+
+    // calculate decreasing text size as function of life
+    const textSize = font_size - lifeRatio * font_size;
+    
+     // calculate spread position as function of life
+    const [spreadX, spreadY] = [
+      item.deltaX * lifeRatio,
+      item.deltaY * lifeRatio]
+    
+    // add spread to origin
+    const [resultX, resultY] = toGrid(item.originX + spreadX, item.originY + spreadY)
+    
+    // render
+    context.font = `${textSize}px Monaco`;
+    context.fillText(item.char, resultX, resultY);
+  });
+
+  if (cursor) {
+    // context.font = `${font_size}px Monaco`;
+    // const [resultX, resultY] = toGrid(cursor.originX, cursor.originY)
+    // context.fillText(glyph, resultX, resultY);
+  }
+
+  requestAnimationFrame(render);
+  
+
+};
+
+render();
+
+module.exports = {
+  render
+}
+
+/***/ }),
 /* 3 */
 /***/ (function(module, exports) {
 
@@ -170,15 +316,17 @@ module.exports = update
 /***/ (function(module, exports, __webpack_require__) {
 
 // require index.html so livereload will watch it
-const index = __webpack_require__(0) // eslint-disable-line no-unused-vars
-const clock = __webpack_require__(1)
-const gate = __webpack_require__(2)
+const clock = __webpack_require__(0)
+const gate = __webpack_require__(1)
+const { render: renderTrails } = __webpack_require__(2)
 const updateYear = __webpack_require__(3)
 
-
+renderTrails()
 clock.start()
 updateYear()
 if ('ontouchstart' in window) gate()
+
+console.log('YELLOS')
 
 /***/ })
 /******/ ]);
