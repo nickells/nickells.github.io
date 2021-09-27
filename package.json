@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --watch & http-server",
+    "start": "webpack -d --watch & http-server",
     "build": "webpack && open index.html",
     "kill-live-reload": "kill -9 $(lsof -ti tcp:35729)",
     "kill-http-server": "kill -9 $(lsof -ti tcp:8080)"
