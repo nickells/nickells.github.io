@@ -8,7 +8,7 @@ const font_size = 18;
 const particle_duration = 800;
 const explosion_count = 50;
 const trail_width = 300;
-const trail_delay = 150
+const trail_delay = 0
 
 
 const size = () => {
