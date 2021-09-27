@@ -3,8 +3,8 @@ console.log('hi')
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
 
-const grid_size = 24;
-const font_size = 24;
+const grid_size = 18;
+const font_size = 18;
 const particle_duration = 800;
 const explosion_count = 50;
 const trail_width = 300;
