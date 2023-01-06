@@ -18,7 +18,7 @@
     "extract-text-webpack-plugin": "^2.1.2",
     "less": "^2.7.2",
     "less-loader": "^4.0.4",
-    "webpack": "^2.6.1"
+    "webpack": "^5.75.0"
   },
   "dependencies": {
     "css-loader": "^0.28.4",
