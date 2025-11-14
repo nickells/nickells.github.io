@@ -16,7 +16,7 @@
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.3.0",
     "extract-text-webpack-plugin": "^2.1.2",
-    "less": "^2.7.2",
+    "less": "^4.4.2",
     "less-loader": "^4.0.4",
     "webpack": "^5.102.1"
   },
