@@ -178,6 +178,4 @@ const render = () => {
 
 render();
 
-module.exports = {
-  render
-}
+export { render }

@@ -32,4 +32,4 @@ const hijackLinks = () => {
   links.forEach(elem => elem.addEventListener('click', hijack))
 }
 
-module.exports = hijackLinks
+export default hijackLinks

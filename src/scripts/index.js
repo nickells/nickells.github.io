@@ -1,8 +1,11 @@
-// require index.html so livereload will watch it
-const clock = require('./clock')
-const gate = require('./gate')
-const { render: renderTrails } = require('./trails')
-const updateYear = require('./year')
+// Import styles
+import '../styles/index.less'
+
+// Import modules
+import clock from './clock.js'
+import gate from './gate.js'
+import { render as renderTrails } from './trails.js'
+import updateYear from './year.js'
 
 renderTrails()
 clock.start()
