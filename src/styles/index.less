@@ -91,10 +91,71 @@ a {
   text-decoration: none;
 }
 
+.thing-video-wrapper {
+  width: 360px;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 4px;
+  overflow: hidden;
+  font-family: "sans-serif";
+  grid-area: video;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  
+  &:after {
+    content: '•••';
+    display: block;
+    color: white;
+    position: absolute;
+    top: -7px;
+    left: 1px;
+    width: 100%;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.0);
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.thing-content {
+  grid-area: content;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+  max-width: 400px;
+
+  @media screen and (min-width: 1280px){
+    max-width: 600px;
+  }   
+
+}
+
 .thing {
-  display: block;
+
   padding-bottom: 80px;
   .mixin-body-font();
+  display: flex;
+  gap: 12px;
+
+  flex-direction: column;
+
+  
+  @media screen and (min-width: 1024px){
+    flex-direction: row;
+    gap: 50px;
+  }
+
+
+
   h3 {
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -115,9 +176,10 @@ a {
   }
   &:hover {
     cursor: pointer;
-    p {
+    h3 {
       background: yellow;
     }
+ 
   }
 }
 

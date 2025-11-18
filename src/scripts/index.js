@@ -6,6 +6,7 @@ import clock from './clock.js'
 import gate from './gate.js'
 import { render as renderTrails } from './trails.js'
 import updateYear from './year.js'
+import './videos.js'
 
 renderTrails()
 clock.start()
