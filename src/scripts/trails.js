@@ -36,6 +36,15 @@ window.addEventListener("resize", () => {
 
 const cursorGlyph = "↖";
 const trailGlyph = "･✻◦✷✧○❋";
+const colorOptions = [
+  'red',
+  'green',
+  'blue',
+  'yellow',
+  'purple',
+  'orange',
+  'pink',
+]
 
 let trail = [];
 
@@ -56,6 +65,8 @@ const renderSeed = () => {
     newContext.font = `${font_size}px Monaco`;
     newContext.textAlign = 'center'
     newContext.textBaseline = 'middle'  
+    newContext.fillStyle = colorOptions[idx % colorOptions.length]
+
     newContext.fillText(glyph, font_size / 2, font_size / 2)
     if (glyph !== cursorGlyph) {
       glyphCanvases.push(newCanvas)

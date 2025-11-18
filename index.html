@@ -9,22 +9,44 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Junge&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
   <script type="module" src="/src/scripts/index.js"></script>
   <canvas id="canvas"></canvas>
+  <!-- <div id="clock">
+    <div class="hand minutes" id="minutes">
+      <div class="outer semicircle"></div>
+      <div class="inner semicircle"></div>
+    </div>
+    <div class="hand hours" id="hours">
+      <div class="outer semicircle"></div>
+      <div class="inner semicircle"></div>
+    </div>
+    <div class="hand seconds" id="seconds">
+      <div class="outer semicircle"></div>
+      <div class="inner semicircle"></div>
+    </div>
+  </div> -->
   <section>
     <h1>Nick Ellsworth's web portfolio</h1>
     <p id="hero">
       Nick <nobr>Ellswor<span id="th">th</span></nobr>
     </p>
     <h2 id="copy">
-      👋 NY-based creative web developer. Here's a collection of my recent explorations and experiments. 
+      Creative web developer based in New York. The following is a collection of my recent explorations and experiments. 
     </h2>
+    <div class="grl-toggle-container">
+    <button class='grl-toggle active' id="grid-toggle"><img src="/grid.svg" alt="Grid" /></button>
+    <button class='grl-toggle' id="list-toggle"><img src="/list.svg" alt="List" /></button>
+    </div>
+    </section>
+    <section id="projects" class="grid">
     <a class="thing" href="glass-filter">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/fluted-glass.webp">
           <source src="/screen-recordings/fluted-glass.webm" type="video/webm">
         </video>
       </div>
@@ -35,7 +57,7 @@
     </a>
     <a class="thing" href="grain-demo">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/canvas-grain.webp">
           <source src="/screen-recordings/canvas-grain.webm" type="video/webm">
         </video>
       </div>
@@ -46,7 +68,7 @@
     </a>
     <a class="thing" href="calendar">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/calendar.webp">
           <source src="/screen-recordings/calendar.webm" type="video/webm">
         </video>
       </div>
@@ -57,7 +79,7 @@
     </a>
     <a class="thing" href="https://www.figma.com/community/widget/1275491880676090219/facilitator">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/facilitator.webp">
           <source src="/screen-recordings/facilitator.webm" type="video/webm">
         </video>
       </div>
@@ -68,7 +90,7 @@
     </a>
     <a class="thing" href="scanner">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/scanner.webp">
           <source src="/screen-recordings/scanner.webm" type="video/webm">
         </video>
       </div>
@@ -79,7 +101,7 @@
     </a>
     <a class="thing" data-unfriendly href="unicode-trail">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/trail.webp">
           <source src="/screen-recordings/trail.webm" type="video/webm">
         </video>
       </div>
@@ -90,7 +112,7 @@
     </a>
     <a class="thing" href="particles">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/particles.webp">
           <source src="/screen-recordings/particles.webm" type="video/webm">
         </video>
       </div>
@@ -101,7 +123,7 @@
     </a>
     <a class="thing" data-unfriendly href="three-midi-vis/build/">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/midi.webp">
           <source src="/screen-recordings/midi.webm" type="video/webm">
         </video>
       </div>
@@ -112,7 +134,7 @@
     </a>
     <a class="thing" href="https://stardewna.me/">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/stardew.webp">
           <source src="/screen-recordings/stardew.webm" type="video/webm">
         </video>
       </div>
@@ -123,7 +145,7 @@
     </a>
     <a class="thing" data-unfriendly href="rain/build/">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/rain.webp">
           <source src="/screen-recordings/rain.webm" type="video/webm">
         </video>
       </div>
@@ -134,7 +156,7 @@
     </a>
     <a class="thing" data-unfriendly href="frets/">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/frets.webp">
           <source src="/screen-recordings/frets.webm" type="video/webm">
         </video>
       </div>
@@ -145,7 +167,7 @@
     </a>
     <a class="thing" href="strings">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/strings.webp">
           <source src="/screen-recordings/strings.webm" type="video/webm">
         </video>
       </div>
@@ -156,7 +178,7 @@
     </a>
     <a class="thing" data-unfriendly href="drummer">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/drummer.webp">
           <source src="/screen-recordings/drummer.webm" type="video/webm">
         </video>
       </div>
@@ -167,7 +189,7 @@
     </a>
     <a class="thing" href="gif-saver/?urls=https://i.imgur.com/frFzz7e.gif,https://ubisafe.org/images/gif-transparent-1.gif">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/saver.webp">
           <source src="/screen-recordings/saver.webm" type="video/webm">
         </video>
       </div>
@@ -178,7 +200,7 @@
     </a>
     <a class="thing" href="knob">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/knob.webp">
           <source src="/screen-recordings/knob.webm" type="video/webm">
         </video>
       </div>
@@ -189,7 +211,7 @@
     </a>
     <a class="thing" href="metronome">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/metro.webp">
           <source src="/screen-recordings/metro.webm" type="video/webm">
         </video>
       </div>
@@ -204,7 +226,7 @@
     </a> -->
     <a class="thing" href="spatial-audio">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/ambience.webp">
           <source src="/screen-recordings/ambience.webm" type="video/webm">
         </video>
       </div>
@@ -219,7 +241,7 @@
     </a> -->
     <a class="thing" data-unfriendly href="https://codepen.io/nickells/full/gWEPLd/">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/card.webp">
           <source src="/screen-recordings/card.webm" type="video/webm">
         </video>
       </div>
@@ -230,7 +252,7 @@
     </a>
     <a class="thing" href="http://chills.network">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/anagram.webp">
           <source src="/screen-recordings/anagram.webm" type="video/webm">
         </video>
       </div>
@@ -241,7 +263,7 @@
     </a>
     <a class="thing" href="clumsy-typer">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/typer.webp">
           <source src="/screen-recordings/typer.webm" type="video/webm">
         </video>
       </div>
@@ -265,7 +287,7 @@
 
     <a class="thing" href="slack-emoji-converter/">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/slack.webp">
           <source src="/screen-recordings/slack.webm" type="video/webm">
         </video>
       </div>
@@ -280,7 +302,7 @@
     </a> -->
     <a class="thing" data-unfriendly href="keyboard-simulator-2015/">
       <div class="thing-video-wrapper">
-        <video muted loop playsinline data-autoplay>
+        <video muted loop playsinline data-autoplay poster="/screen-recordings/keys.webp">
           <source src="/screen-recordings/keys.webm" type="video/webm">
         </video>
       </div>
@@ -299,30 +321,15 @@
     <a class="thing" href="https://soundcloud.com/dimmrswitch/">
       <div class="thing-content">
         <h3><span>Music</span><span>2012 - Now</h3>
-        <p>Bleeps, bloops, and miscellaneous blops</p>
       </div>
     </a>
-    <a class="thing" href="https://nickellsworth.photography/">
+    <a class="thing" href="http://photos.nick.media">
       <div class="thing-content">
         <h3><span>Photography</span><span>2005 - Now</h3>
-        <p>Pixels arranged neatly and with intention</p>
       </div>
     </a>
   </section>
-  <div id="clock">
-    <div class="hand minutes" id="minutes">
-      <div class="outer semicircle"></div>
-      <div class="inner semicircle"></div>
-    </div>
-    <div class="hand hours" id="hours">
-      <div class="outer semicircle"></div>
-      <div class="inner semicircle"></div>
-    </div>
-    <div class="hand seconds" id="seconds">
-      <div class="outer semicircle"></div>
-      <div class="inner semicircle"></div>
-    </div>
-  </div>
+
   <footer>
     <span>Copyright © <span id="year">2019</span> Nick&nbsp;Ellsworth</span>
     <a href="https://github.com/nickells">Github</a>

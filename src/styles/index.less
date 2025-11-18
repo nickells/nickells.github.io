@@ -1,32 +1,6 @@
-@font-face {
-  font-family: 'NeueHaasRegular';
-  src: url('/fonts/NeueHaasUnicaPro-Regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'NeueHassBold';
-  src: url('/fonts/NeueHaasUnicaPro-Bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'AkzidenzGroteskMedium';
-  src: url('/fonts/AkzidenzGrotesk-Medium.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'AkzidenzGroteskRegular';
-  src: url('/fonts/AkzidenzGrotesk-Regular.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'AkzidenzGroteskLight';
-  src: url('/fonts/AkzidenzGrotesk-Light.otf') format('opentype');
-}
-
-
 .mixin-body-font {
   font-size: 20px;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     font-size: 24px;
   }
 
@@ -34,26 +8,30 @@
 }
 
 body {
-  --main-background: #EFEFEF;
+  --main-background: #efefef;
   --main-content: #232323;
-  --light-gray: #AAA;
+  --light-gray: #aaa;
   background: var(--main-background);
   color: var(--main-content);
   margin: 0;
-  font-family: "AkzidenzGroteskMedium";
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-weight: 400;
   font-kerning: normal;
 }
 
-section {  
+section {
   padding-left: 20px;
   padding-right: 20px;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
   font-weight: normal;
@@ -68,19 +46,19 @@ h1 {
   line-height: 1em;
   font-size: 80px;
   text-align: left;
-  font-weight: bold;
-  font-family: "AkzidenzGroteskRegular";
+  font-weight: normal;
+  font-family: 'Familjen Grotesk', sans-serif;
   margin-bottom: 80px;
   margin-top: 50px;
   margin-left: -0.09em;
-  @media screen and (min-width: 950px){
+  @media screen and (min-width: 950px) {
     font-size: 120px;
   }
 }
 
 h2 {
   font-size: 32px;
-  font-family: "Junge", serif;
+  font-family: 'Junge', serif;
   margin-bottom: 80px;
   margin-left: -0.09em;
   max-width: 800px;
@@ -92,16 +70,16 @@ a {
 }
 
 .thing-video-wrapper {
-  width: 360px;
+  width: auto;
+  max-width: 360px;
   position: relative;
   border: 1px solid black;
   border-radius: 4px;
   overflow: hidden;
-  font-family: "sans-serif";
+  font-family: 'sans-serif';
   grid-area: video;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  
+
   &:after {
     content: '•••';
     display: block;
@@ -111,11 +89,10 @@ a {
     left: 1px;
     width: 100%;
     font-size: 18px;
-    background: rgba(0, 0, 0, 0.0);
-    z-index: 1;
+    background: rgba(0, 0, 0, 0);
     pointer-events: none;
   }
-  
+
   video {
     display: block;
     width: 100%;
@@ -130,17 +107,14 @@ a {
   flex-direction: column;
   justify-content: center;
 
-
   max-width: 400px;
 
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1280px) {
     max-width: 600px;
-  }   
-
+  }
 }
 
 .thing {
-
   padding-bottom: 80px;
   .mixin-body-font();
   display: flex;
@@ -148,13 +122,10 @@ a {
 
   flex-direction: column;
 
-  
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     flex-direction: row;
     gap: 50px;
   }
-
-
 
   h3 {
     text-transform: uppercase;
@@ -163,15 +134,15 @@ a {
   span {
     &:nth-child(1) {
       text-decoration: underline;
-      margin-right: .4em;
+      margin-right: 0.4em;
     }
     &:nth-child(2) {
-      font-family: "Junge", serif;
+      font-family: 'Junge', serif;
       color: var(--light-gray);
     }
   }
   p {
-    font-family: "Junge", serif;
+    font-family: 'Junge', serif;
     display: inline-block;
   }
   &:hover {
@@ -179,13 +150,12 @@ a {
     h3 {
       background: yellow;
     }
- 
   }
 }
 
 #th {
   display: inline-block;
-  margin-left: .06em;
+  margin-left: 0.02em;
 }
 
 #clock {
@@ -242,12 +212,12 @@ a {
     width: 120px;
     height: 120px;
     border-color: green;
- 
+
     &.inner {
       width: 80px;
       height: 80px;
     }
-   }  
+  }
 }
 
 section.dark {
@@ -269,7 +239,7 @@ section.dark {
   h2 {
     color: var(--main-background);
   }
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -290,18 +260,17 @@ footer {
   flex-direction: row;
   justify-content: flex-end;
   box-sizing: border-box;
-  z-index: 2;
 
-  font-family: "AkzidenzGroteskLight", serif;
+  font-family: 'Familjen Grotesk', sans-serif;
 
   padding-left: 20px;
   padding-right: 20px;
-  
+
   font-size: 12px;
-  @media screen and (min-width: 480px){
+  @media screen and (min-width: 480px) {
     font-size: 16px;
   }
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -346,7 +315,6 @@ footer {
     border: none;
     text-transform: uppercase;
     font-family: 'AkzidenzGroteskLight';
-
   }
 }
 
@@ -354,4 +322,51 @@ footer {
   position: fixed;
   pointer-events: none;
   top: 0;
+}
+
+#projects.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+
+  .thing {
+    flex-direction: column;
+    font-size: 20px;
+    gap: 8px;
+  }
+}
+
+.grl-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    background: yellow;
+  }
+  &.active {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.grl-toggle-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+  justify-content: flex-end;
+
+  display: none;
+  @media screen and (min-width: 640px) {
+    display: flex;
+  }
 }
