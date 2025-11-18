@@ -11,11 +11,10 @@ const observer = new IntersectionObserver(
     })
   },
   {
-    threshold: 0.5, // Play when 50% visible
+    threshold: 0.9, // Play when 90% visible
   }
 )
 
 videos.forEach((video) => observer.observe(video))
 
 export default observer
-
