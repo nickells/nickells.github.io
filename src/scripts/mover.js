@@ -1,12 +1,23 @@
 const move = () => {
-  let mouseX = 0
-  let mouseY = 0
+  let mouseX = window.innerWidth / 2
+  let mouseY = window.innerHeight / 2
 
   document.body.addEventListener('mousemove', (e) => {
     mouseX = e.clientX
     mouseY = e.clientY
-
   })
+
+  document.body.addEventListener('mouseleave', () => {
+    mouseX = window.innerWidth / 2
+    mouseY = window.innerHeight / 2
+  })
+
+  document.querySelectorAll('.thing').forEach(thing => {
+    thing.style.transition = 'transform 0.3s ease-out'
+  })
+
+
+
 
   const raf = () => {
     requestAnimationFrame(raf)
@@ -21,7 +32,6 @@ const move = () => {
       const distX = Math.sqrt(Math.abs(mouseX - thingCenterX)) * xSign * 0.2
       const distY = Math.sqrt(Math.abs(mouseY - thingCenterY)) * ySign * 0.2
 
-      thing.style.transition = 'transform 0.1s ease-in-out'
       thing.style.transform = `translate(${distX}px, ${distY}px)`
     })
 

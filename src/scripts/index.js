@@ -28,3 +28,19 @@ document.getElementById('list-toggle').addEventListener('click', () => {
   document.getElementById('grid-toggle').classList.remove('active')
   document.getElementById('list-toggle').classList.add('active')
 })
+
+document.getElementById('email-link').addEventListener('click', (e) => {
+  const node = document.getElementById('email-link')
+  const html = node.innerHTML
+
+  e.preventDefault()
+    navigator.clipboard.writeText('ellsworth.nick@gmail.com')
+    node.innerHTML = 'copied!'
+    node.style.pointerEvents = 'none'
+
+    setTimeout(() => {
+      node.innerHTML = html
+      node.style.pointerEvents = 'auto'
+    }, 2000)
+
+})
