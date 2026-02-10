@@ -33,4 +33,4 @@ function clock() {
   }
 }
 
-module.exports =  clock()
+export default clock()

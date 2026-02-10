@@ -4,4 +4,4 @@ const update = () => {
   $year.innerText = new Date().getFullYear()
 }
 
-module.exports = update
+export default update
