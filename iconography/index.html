@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Iconography - Nick Ellsworth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/bird.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Junge&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --main-background: #efefef;
+        --main-content: #232323;
+        --light-gray: #aaa;
+      }
+      body {
+        background: var(--main-background);
+        color: var(--main-content);
+        margin: 0;
+        font-family: 'Junge', serif;
+      }
+      section {
+        padding: 50px 20px 40px;
+      }
+      @media screen and (min-width: 768px) {
+        section {
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+      }
+      h1 {
+        font-size: 32px;
+        font-weight: normal;
+        margin: 0 0 20px;
+        font-family: 'Familjen Grotesk', sans-serif;
+      }
+      p {
+        font-size: 20px;
+      }
+      @media screen and (min-width: 768px) {
+        p {
+          font-size: 24px;
+        }
+      }
+      a {
+        color: var(--main-content);
+      }
+
+      #icon-list {
+        margin-left: 20px;
+        display: grid;
+        grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 48px;
+
+        @media screen and (min-width: 768px) {
+          margin-left: 50px;
+        }
+      }
+      .icon-item {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: center;
+        h4 {
+          font-family: 'Familjen Grotesk', sans-serif;
+          font-size: 20px;
+          font-weight: normal;
+          margin: 0 0 5px;
+        }
+        @media screen and (min-width: 768px) {
+          h4 {
+            font-size: 24px;
+          }
+        }
+        span {
+          display: inline-block;
+          font-size: 20px;
+          max-width: 640px;
+        }
+        @media screen and (min-width: 768px) {
+          span {
+            font-size: 24px;
+          }
+        }
+
+        img {
+          cursor: pointer;
+          transition: transform 0.15s ease;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+
+      /* Small screens: vertical layout */
+      @media screen and (max-width: 639px) {
+        .icon-item {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      /* Hide preview by default */
+      #preview-container {
+        display: none;
+      }
+
+      /* Large screens: hover preview on right */
+      @media screen and (min-width: 1024px) {
+        #icon-list {
+          width: 50%;
+        }
+        #preview-container {
+          display: flex;
+          position: fixed;
+          top: 0;
+          right: 0;
+          width: 50%;
+          height: 100vh;
+          align-items: center;
+          justify-content: center;
+          pointer-events: none;
+        }
+        #preview-container img {
+          max-width: 100%;
+          max-height: 100%;
+          opacity: 0;
+          transition: opacity 0.2s ease;
+        }
+        #preview-container img.visible {
+          opacity: 1;
+        }
+      }
+
+      /* Lightbox for small/medium screens */
+      #lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 100;
+        align-items: center;
+        justify-content: center;
+      }
+      #lightbox.open {
+        display: flex;
+      }
+      #lightbox img {
+        max-width: 90%;
+        max-height: 90%;
+      }
+      #lightbox-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 32px;
+        cursor: pointer;
+        font-family: 'Familjen Grotesk', sans-serif;
+      }
+      @media screen and (min-width: 1024px) {
+        #lightbox {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <script type="module" src="./main.js"></script>
+    <section>
+      <h1>Iconography</h1>
+      <p>Designs created in an effort to make my Dock as beautiful as possible.</p>
+    </section>
+
+    <div id="preview-container">
+      <img id="preview-img" src="" alt="Preview" />
+    </div>
+
+    <div id="lightbox">
+      <button id="lightbox-close">✕</button>
+      <img id="lightbox-img" src="" alt="Lightbox" />
+    </div>
+
+    <div id="icon-list">
+      <div class="icon-item">
+        <img src="/icons/thumbs/capture.webp" alt="Icon 1" />
+        <div>
+          <h4>Capture</h4>
+          <span
+            >Icon for an app to make screen recordings, modeled after old Super 8 cameras with
+            special attention to fitting a three dimensional object into a squircle. Made in
+            Figma.</span
+          >
+        </div>
+      </div>
+      <div class="icon-item">
+        <img src="/icons/thumbs/matte.webp" alt="Icon 1" />
+        <div>
+          <h4>Matte</h4>
+          <span
+            >Icon for an app that adds customizable borders to images, meant to represent a
+            cardboard border as seen on printed photos. Made in Figma.</span
+          >
+        </div>
+      </div>
+      <div class="icon-item">
+        <img src="/icons/thumbs/code.webp" alt="Icon 1" />
+        <div>
+          <h4>Code</h4>
+          <span>Alternative icon for VS Code. Made in Figma.</span>
+        </div>
+      </div>
+      <div class="icon-item">
+        <img src="/icons/thumbs/chrome canary.webp" alt="Icon 1" />
+        <div>
+          <h4>Chrome Canary</h4>
+          <span>Alternative icon for Chrome Canary. Made in Figma with help from ChatGPT.</span>
+        </div>
+      </div>
+      <div class="icon-item">
+        <img src="/icons/thumbs/spotify.webp" alt="Icon 1" />
+        <div>
+          <h4>Spotify</h4>
+          <span>Alternative icon for Spotify. Made in Figma</span>
+        </div>
+      </div>
+    </div>
+    <site-footer></site-footer>
+    <google-analytics></google-analytics>
+  </body>
+</html>

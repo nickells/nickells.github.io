@@ -4,16 +4,15 @@ import '../styles/index.less'
 // Import modules
 import clock from './clock.js'
 import gate from './gate.js'
-import { render as renderTrails } from './trails.js'
-import updateYear from './year.js'
+import '../components/cursor-trail.js'
 import './videos.js'
+import '../components/site-footer.js'
+import '../components/google-analytics.js'
 
 import move from './mover.js'
 move()
 
-renderTrails()
 clock.start()
-updateYear()
 if ('ontouchstart' in window) gate()
 
 document.getElementById('grid-toggle').addEventListener('click', () => {
@@ -27,20 +26,4 @@ document.getElementById('list-toggle').addEventListener('click', () => {
   document.getElementById('projects').classList.add('list')
   document.getElementById('grid-toggle').classList.remove('active')
   document.getElementById('list-toggle').classList.add('active')
-})
-
-document.getElementById('email-link').addEventListener('click', (e) => {
-  const node = document.getElementById('email-link')
-  const html = node.innerHTML
-
-  e.preventDefault()
-    navigator.clipboard.writeText('ellsworth.nick@gmail.com')
-    node.innerHTML = 'copied!'
-    node.style.pointerEvents = 'none'
-
-    setTimeout(() => {
-      node.innerHTML = html
-      node.style.pointerEvents = 'auto'
-    }, 2000)
-
 })

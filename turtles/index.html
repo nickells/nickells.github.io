@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Turtles - Nick Ellsworth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/bird.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Junge&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --main-background: #efefef;
+        --main-content: #232323;
+        --light-gray: #aaa;
+      }
+      body {
+        background: var(--main-background);
+        color: var(--main-content);
+        margin: 0;
+        font-family: 'Junge', serif;
+      }
+      section {
+        padding: 50px 20px 80px;
+      }
+      @media screen and (min-width: 768px) {
+        section {
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+      }
+      h1 {
+        font-size: 32px;
+        font-weight: normal;
+        margin: 0 0 20px;
+        font-family: 'Familjen Grotesk', sans-serif;
+      }
+      p {
+        font-size: 20px;
+      }
+      @media screen and (min-width: 768px) {
+        p {
+          font-size: 24px;
+        }
+      }
+      a {
+        color: var(--main-content);
+      }
+      .turtle-list {
+        list-style: none;
+        padding: 0;
+        margin: 40px 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 24px;
+      }
+      .turtle-list li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 8px;
+      }
+      .turtle-list img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+      .turtle-list span {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script type="module" src="./main.js"></script>
+    <section>
+      <h1>Turtles</h1>
+      <p>A directory of he-brings-you turtles made for work.</p>
+
+      <ul class="turtle-list">
+        <li>
+          <img src="/turtles/he-brings-you-a-pr.png" alt="he-brings-you-a-pr" />
+          <span>:he-brings-you-a-pr:</span>
+        </li>
+        <li>
+          <img src="/turtles/he-brings-you-alignment.gif" alt="he-brings-you-alignment" />
+          <span>:he-brings-you-alignment:</span>
+        </li>
+        <li>
+          <img src="/turtles/he-brings-you-butter.png" alt="he-brings-you-butter" />
+          <span>:he-brings-you-butter:</span>
+        </li>
+        <li>
+          <img
+            src="/turtles/he-brings-you-cropping-issues.-2png.png"
+            alt="he-brings-you-cropping-issues"
+          />
+          <span>:he-brings-you-cropping-issues:</span>
+        </li>
+        <li>
+          <img src="/turtles/he-brings-you-dental-hygiene.png" alt="he-brings-you-dental-hygiene" />
+          <span>:he-brings-you-dental-hygiene:</span>
+        </li>
+        <li>
+          <img src="/turtles/he-brings-you-latency.gif" alt="he-brings-you-latency" />
+          <span>:he-brings-you-latency:</span>
+        </li>
+        <li>
+          <img src="/turtles/he-brings-you-outpainting.png" alt="he-brings-you-outpainting" />
+          <span>:he-brings-you-outpainting:</span>
+        </li>
+      </ul>
+    </section>
+
+    <site-footer></site-footer>
+    <google-analytics></google-analytics>
+  </body>
+</html>

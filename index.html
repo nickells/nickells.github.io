@@ -16,7 +16,7 @@
 
 <body>
   <script type="module" src="/src/scripts/index.js"></script>
-  <canvas id="canvas"></canvas>
+  <cursor-trail></cursor-trail>
   <!-- <div id="clock">
     <div class="hand minutes" id="minutes">
       <div class="outer semicircle"></div>
@@ -37,8 +37,9 @@
       Nick <nobr>Ellswor<span id="th">th</span></nobr>
     </p>
     <h2 id="copy">
-      Creative web developer based in New York. The following is a collection of my recent explorations and experiments. 
+      Creative web developer based in New York. The following is a collection of my recent explorations and experiments. Also, explore my <a href="iconography">iconography</a>.
     </h2>
+
     <div class="grl-toggle-container">
     <button class='grl-toggle active' id="grid-toggle"><img src="/grid.svg" alt="Grid" /></button>
     <button class='grl-toggle' id="list-toggle"><img src="/list.svg" alt="List" /></button>
@@ -316,6 +317,8 @@
       <h3><span>Blipcrowd</span><span>2015</span></h3>
       <p>Multiplayer music sequencer</p>
     </a> -->
+    <a href="/turtles" class="turtle-link"><img src="/turtle.png" alt="Turtle" /></a>
+
   </section>
   <section class="dark">
     <h2>Other things I do:</h2>
@@ -331,24 +334,8 @@
     </a>
   </section>
 
-  <footer>
-    <span>© <span id="year">2019</span> Nick&nbsp;Ellsworth</span>
-    <a href="_blank" id="email-link"><span id="email">
-  
-    </span>ellsworth.nick@gmail.com</span></a>
-    <!-- <a href="https://github.com/nickells">Github</a> -->
-    <a href="https://www.linkedin.com/in/nickells/">LinkedIn</a>
-  </footer>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BFX10B8LBE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BFX10B8LBE');
-</script>
-  <!-- End Google Analytics -->
+  <site-footer></site-footer>
+  <google-analytics></google-analytics>
 
 
 </body>

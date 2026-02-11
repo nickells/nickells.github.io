@@ -20,6 +20,7 @@ body {
 }
 
 section {
+  position: relative;
   padding-left: 20px;
   padding-right: 20px;
   @media screen and (min-width: 768px) {
@@ -111,6 +112,15 @@ a {
 
   @media screen and (min-width: 1280px) {
     max-width: 600px;
+  }
+}
+
+h2 a {
+  display: inline-block;
+  text-decoration: underline;
+  font-family: 'Familjen Grotesk', sans-serif;
+  &:hover {
+    background: yellow;
   }
 }
 
@@ -249,45 +259,7 @@ section:last-of-type {
   margin-bottom: 40px; // room for footer
 }
 
-footer {
-  position: fixed;
-  background-color: var(--main-background);
-  color: var(--main-content);
-  border-top: 1px solid var(--light-gray);
-  width: 100%;
-  bottom: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  box-sizing: border-box;
-
-  font-family: 'Familjen Grotesk', sans-serif;
-
-  padding-left: 20px;
-  padding-right: 20px;
-
-  font-size: 12px;
-  @media screen and (min-width: 480px) {
-    font-size: 16px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  > span {
-    padding: 10px 0px;
-    margin-right: auto;
-    margin-left: -5px;
-  }
-  a {
-    padding: 10px;
-    margin-right: -5px;
-    &:hover {
-      background: yellow;
-    }
-  }
-}
+@import './footer.less';
 
 .gate {
   position: fixed;
@@ -368,5 +340,19 @@ footer {
   display: none;
   @media screen and (min-width: 640px) {
     display: flex;
+  }
+}
+
+.turtle-link {
+  position: absolute;
+  bottom: -18px;
+  right: 20px;
+  z-index: 1;
+  cursor: pointer;
+  img {
+    width: 64px;
+  }
+  @media screen and (min-width: 768px) {
+    right: 50px;
   }
 }
