@@ -1,3 +1,14 @@
+// viewport position from layout offsets, which ignore transforms
+const layoutPosition = (el) => {
+  let x = 0
+  let y = 0
+  for (let node = el; node; node = node.offsetParent) {
+    x += node.offsetLeft
+    y += node.offsetTop
+  }
+  return { x: x - window.scrollX, y: y - window.scrollY }
+}
+
 const move = () => {
   let mouseX = window.innerWidth / 2
   let mouseY = window.innerHeight / 2
@@ -12,7 +23,7 @@ const move = () => {
     mouseY = window.innerHeight / 2
   })
 
-  document.querySelectorAll('.thing, .era-card').forEach(thing => {
+  document.querySelectorAll('.thing, .era-card:not([data-still])').forEach(thing => {
     thing.style.transition = 'transform 0.3s ease-out'
   })
 
@@ -22,10 +33,14 @@ const move = () => {
   const raf = () => {
     requestAnimationFrame(raf)
 
-    document.querySelectorAll('.thing, .era-card').forEach(thing => {
-      const thingRect = thing.getBoundingClientRect()
-      const thingCenterX = thingRect.left + thingRect.width / 2;
-      const thingCenterY = thingRect.top + thingRect.height / 2;
+    document.querySelectorAll('.thing, .era-card:not([data-still])').forEach(thing => {
+      // Measure where the card sits without its own offset. The bounding rect
+      // includes the transform set here (mid-transition, too), so using it
+      // fed each frame's nudge back into the next: near the cursor the push
+      // direction kept flipping and the cards jiggled.
+      const { x, y } = layoutPosition(thing)
+      const thingCenterX = x + thing.offsetWidth / 2;
+      const thingCenterY = y + thing.offsetHeight / 2;
 
       const xSign = mouseX - thingCenterX > 0 ? 1 : -1
       const ySign = mouseY - thingCenterY > 0 ? 1 : -1

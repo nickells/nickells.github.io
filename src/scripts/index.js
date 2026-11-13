@@ -9,6 +9,9 @@ import './videos.js'
 import '../components/site-footer.js'
 import '../components/google-analytics.js'
 
+import eraLine from './era-line.js'
+eraLine()
+
 import move from './mover.js'
 move()
 

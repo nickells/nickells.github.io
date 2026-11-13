@@ -374,71 +374,75 @@ section:last-of-type {
   }
 }
 
-// tile + blurb, laid out like a .thing card
+// the after/before cell: fills its grid row; the line through it is drawn
+// by src/scripts/era-line.js, which also sets --mx/--my/--angle for the labels
 .era-card {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
   padding-bottom: 80px; // matches .thing
-  margin-left: -0.09 * 20px; // matches .thing's optical nudge (.mixin-body-font at the grid's 20px)
-  align-self: start;
-
-  // empty line where a card's title goes, so the blurb lines up with descriptions
-  .era-spacer {
-    font-size: 1.17 * 20px; // a card h3: browser default 1.17em of the grid's 20px
-    margin-bottom: 10px - 8px; // h3 margin, minus the gap already between items
-    // a title mixes Familjen (name) and Junge (year); their baselines set the
-    // line height, so the blank line mixes them too
-    span:nth-child(2) {
-      font-family: 'Junge', serif;
-    }
-  }
-
-  .era-blurb {
-    font-family: 'Junge', serif;
-    font-size: 20px;
-    max-width: 360px;
-  }
+  align-self: stretch;
 }
 
 .era {
   position: relative;
-  // same box as .thing-video-wrapper: up to 360px of 619x400 video inside a 1px border
-  box-sizing: content-box;
-  border: 1px solid transparent;
-  max-width: 360px;
-  aspect-ratio: 619 / 400;
+  flex: 1;
+  min-height: 200px; // when it sits alone in a row (one column)
   font-family: 'Junge', serif;
   font-size: 20px;
 
-  .era-line {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    line {
-      stroke: var(--main-content);
-      stroke-width: 1px;
-    }
-    .era-tint {
-      fill: var(--main-content);
-      opacity: 0.05;
-    }
-  }
-
-  // labels ride the diagonal: the tile is fixed at 619:400,
-  // so the line's angle is atan(400 / 619) = 32.87deg
   .era-after,
   .era-before {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: var(--my, 50%);
+    left: var(--mx, 50%);
     white-space: nowrap;
+    // Junge has no italic; Familjen's real one is already loaded
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-style: italic;
   }
   .era-after {
-    transform: translate(-50%, -50%) rotate(-32.87deg) translate(-3.5em, -0.75em);
+    transform: translate(-50%, -50%) rotate(calc(-1 * var(--angle, 33deg))) translate(-3.5em, -0.75em);
   }
   .era-before {
-    transform: translate(-50%, -50%) rotate(-32.87deg) translate(3.5em, 0.75em);
+    transform: translate(-50%, -50%) rotate(calc(-1 * var(--angle, 33deg))) translate(3.5em, 0.75em);
+  }
+}
+
+// the after/before line drawn across the grid (src/scripts/era-line.js)
+.era-path {
+  position: absolute;
+  top: 0;
+  left: 0;
+  // sized by CSS, never measured: a measured size can hold the page wider after a resize
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+  path {
+    fill: none;
+    stroke: var(--light-gray);
+    stroke-width: 2px;
+    stroke-dasharray: 0 6px; // zero-length dashes + round caps = dots
+    stroke-linecap: round;
+  }
+}
+// flat (list view): the era cell becomes a full-width row with the line through it
+#projects.era-flat {
+  .era-card {
+    grid-column: 1 / -1;
+  }
+  .era {
+    min-height: 3em;
+  }
+  // stacked flush left: "After LLM" just above the line, "Before LLM" just below
+  .era-after,
+  .era-before {
+    top: 50%;
+    left: 0;
+  }
+  .era-after {
+    transform: translateY(calc(-100% - 0.2em));
+  }
+  .era-before {
+    transform: translateY(0.2em);
   }
 }
