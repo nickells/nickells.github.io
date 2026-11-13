@@ -12,7 +12,7 @@ const move = () => {
     mouseY = window.innerHeight / 2
   })
 
-  document.querySelectorAll('.thing').forEach(thing => {
+  document.querySelectorAll('.thing, .era-card').forEach(thing => {
     thing.style.transition = 'transform 0.3s ease-out'
   })
 
@@ -22,7 +22,7 @@ const move = () => {
   const raf = () => {
     requestAnimationFrame(raf)
 
-    document.querySelectorAll('.thing').forEach(thing => {
+    document.querySelectorAll('.thing, .era-card').forEach(thing => {
       const thingRect = thing.getBoundingClientRect()
       const thingCenterX = thingRect.left + thingRect.width / 2;
       const thingCenterY = thingRect.top + thingRect.height / 2;
